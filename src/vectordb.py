@@ -3,7 +3,8 @@ from chromadb.config import Settings
 
 def get_chroma_client():
     client = chromadb.Client(Settings(
-        persist_directory="db/chroma_db"
+        persist_directory="db/chroma_db",
+        is_persistent=True
     ))
     return client
 

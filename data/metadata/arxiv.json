@@ -1,0 +1,1640 @@
+[
+  {
+    "title": "Fine-grained Defocus Blur Control for Generative Image Models",
+    "authors": [
+      "Ayush Shrivastava",
+      "Connelly Barnes",
+      "Xuaner Zhang",
+      "Lingzhi Zhang",
+      "Andrew Owens",
+      "Sohrab Amirghodsi",
+      "Eli Shechtman"
+    ],
+    "summary": "Current text-to-image diffusion models excel at generating diverse,\nhigh-quality images, yet they struggle to incorporate fine-grained camera\nmetadata such as precise aperture settings. In this work, we introduce a novel\ntext-to-image diffusion framework that leverages camera metadata, or EXIF data,\nwhich is often embedded in image files, with an emphasis on generating\ncontrollable lens blur. Our method mimics the physical image formation process\nby first generating an all-in-focus image, estimating its monocular depth,\npredicting a plausible focus distance with a novel focus distance transformer,\nand then forming a defocused image with an existing differentiable lens blur\nmodel. Gradients flow backwards through this whole process, allowing us to\nlearn without explicit supervision to generate defocus effects based on content\nelements and the provided EXIF data. At inference time, this enables precise\ninteractive user control over defocus effects while preserving scene contents,\nwhich is not achievable with existing diffusion models. Experimental results\ndemonstrate that our model enables superior fine-grained control without\naltering the depicted scene.",
+    "published": "2025-10-07T17:59:15Z",
+    "updated": "2025-10-07T17:59:15Z",
+    "id": "http://arxiv.org/abs/2510.06215v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06215v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "StarEmbed: Benchmarking Time Series Foundation Models on Astronomical\n  Observations of Variable Stars",
+    "authors": [
+      "Weijian Li",
+      "Hong-Yu Chen",
+      "Qinjie Lin",
+      "Nabeel Rehemtulla",
+      "Ved G. Shah",
+      "Dennis Wu",
+      "Adam A. Miller",
+      "Han Liu"
+    ],
+    "summary": "Time series foundation models (TSFMs) are increasingly being adopted as\nhighly-capable general-purpose time series representation learners. Although\ntheir training corpora are vast, they exclude astronomical time series data.\nObservations of stars produce peta-scale time series with unique challenges\nincluding irregular sampling and heteroskedasticity. We introduce StarEmbed,\nthe first public benchmark for rigorous and standardized evaluation of\nstate-of-the-art TSFMs on stellar time series observations (``light curves'').\nWe benchmark on three scientifically-motivated downstream tasks: unsupervised\nclustering, supervised classification, and out-of-distribution source\ndetection. StarEmbed integrates a catalog of expert-vetted labels with\nmulti-variate light curves from the Zwicky Transient Facility, yielding ~40k\nhand-labeled light curves spread across seven astrophysical classes. We\nevaluate the zero-shot representation capabilities of three TSFMs (MOIRAI,\nChronos, Chronos-Bolt) and a domain-specific transformer (Astromer) against\nhandcrafted feature extraction, the long-standing baseline in the astrophysics\nliterature. Our results demonstrate that these TSFMs, especially the Chronos\nmodels, which are trained on data completely unlike the astronomical\nobservations, can outperform established astrophysics-specific baselines in\nsome tasks and effectively generalize to entirely new data. In particular,\nTSFMs deliver state-of-the-art performance on our out-of-distribution source\ndetection benchmark. With the first benchmark of TSFMs on astronomical time\nseries data, we test the limits of their generalization and motivate a paradigm\nshift in time-domain astronomy from using task-specific, fully supervised\npipelines toward adopting generic foundation model representations for the\nanalysis of peta-scale datasets from forthcoming observatories.",
+    "published": "2025-10-07T17:53:56Z",
+    "updated": "2025-10-07T17:53:56Z",
+    "id": "http://arxiv.org/abs/2510.06200v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06200v1",
+    "categories": [
+      "astro-ph.SR",
+      "astro-ph.IM",
+      "cs.AI"
+    ],
+    "primary_category": "astro-ph.SR"
+  },
+  {
+    "title": "Latent Speech-Text Transformer",
+    "authors": [
+      "Yen-Ju Lu",
+      "Yashesh Gaur",
+      "Wei Zhou",
+      "Benjamin Muller",
+      "Jesus Villalba",
+      "Najim Dehak",
+      "Luke Zettlemoyer",
+      "Gargi Ghosh",
+      "Mike Lewis",
+      "Srinivasan Iyer",
+      "Duc Le"
+    ],
+    "summary": "Auto-regressive speech-text models are typically pre-trained on a large\nnumber of interleaved sequences of text tokens and raw speech encoded as speech\ntokens using vector quantization. These models have demonstrated\nstate-of-the-art performance in speech-to-speech understanding and generation\nbenchmarks, together with promising scaling laws, primarily enabled by the\nrepresentational alignment between text and speech. Nevertheless, they suffer\nfrom shortcomings, partly owing to the disproportionately longer sequences of\nspeech tokens in contrast to textual tokens. This results in a large compute\nimbalance between modalities during pre-training as well as during inference,\nand a potential hindrance to effectively aligning speech and text, ultimately\ntranslating to several orders of magnitude slower scaling laws. We introduce\nthe Latent Speech-Text Transformer (LST), which makes pre-training speech-text\nmodels more data-efficient by dynamically and inexpensively aggregating speech\ntokens into latent speech patches. These patches serve as higher-level units\nthat can either align with corresponding textual units to aid capability\ntransfer or even encapsulate common speech sequences like silences to be more\ncompute-efficient. We show that LST outperforms vanilla approaches on\nspeech-to-speech as well as text-to-text benchmarks in both data- and\ncompute-controlled settings, the former indicating more effective\nrepresentational alignment and the latter indicating steeper scaling laws for\nspeech-text models. On HellaSwag story completion, LST achieves 6.5% absolute\ngain in speech accuracy under compute-controlled training and 5.3% under\ndata-controlled training, while also improving text performance. We will\nrelease our models, code, and the evaluation data to facilitate further\nresearch.",
+    "published": "2025-10-07T17:52:08Z",
+    "updated": "2025-10-07T17:52:08Z",
+    "id": "http://arxiv.org/abs/2510.06195v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06195v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "eess.AS"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Barbarians at the Gate: How AI is Upending Systems Research",
+    "authors": [
+      "Audrey Cheng",
+      "Shu Liu",
+      "Melissa Pan",
+      "Zhifei Li",
+      "Bowen Wang",
+      "Alex Krentsel",
+      "Tian Xia",
+      "Mert Cemri",
+      "Jongseok Park",
+      "Shuo Yang",
+      "Jeff Chen",
+      "Lakshya Agrawal",
+      "Aditya Desai",
+      "Jiarong Xing",
+      "Koushik Sen",
+      "Matei Zaharia",
+      "Ion Stoica"
+    ],
+    "summary": "Artificial Intelligence (AI) is starting to transform the research process as\nwe know it by automating the discovery of new solutions. Given a task, the\ntypical AI-driven approach is (i) to generate a set of diverse solutions, and\nthen (ii) to verify these solutions and select one that solves the problem.\nCrucially, this approach assumes the existence of a reliable verifier, i.e.,\none that can accurately determine whether a solution solves the given problem.\nWe argue that systems research, long focused on designing and evaluating new\nperformance-oriented algorithms, is particularly well-suited for AI-driven\nsolution discovery. This is because system performance problems naturally admit\nreliable verifiers: solutions are typically implemented in real systems or\nsimulators, and verification reduces to running these software artifacts\nagainst predefined workloads and measuring performance. We term this approach\nas AI-Driven Research for Systems (ADRS), which iteratively generates,\nevaluates, and refines solutions. Using penEvolve, an existing open-source ADRS\ninstance, we present case studies across diverse domains, including load\nbalancing for multi-region cloud scheduling, Mixture-of-Experts inference,\nLLM-based SQL queries, and transaction scheduling. In multiple instances, ADRS\ndiscovers algorithms that outperform state-of-the-art human designs (e.g.,\nachieving up to 5.0x runtime improvements or 50% cost reductions). We distill\nbest practices for guiding algorithm evolution, from prompt design to evaluator\nconstruction, for existing frameworks. We then discuss the broader implications\nfor the systems community: as AI assumes a central role in algorithm design, we\nargue that human researchers will increasingly focus on problem formulation and\nstrategic guidance. Our results highlight both the disruptive potential and the\nurgent need to adapt systems research practices in the age of AI.",
+    "published": "2025-10-07T17:49:24Z",
+    "updated": "2025-10-08T01:21:49Z",
+    "id": "http://arxiv.org/abs/2510.06189v2",
+    "pdf_url": "http://arxiv.org/pdf/2510.06189v2",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "title": "Window categories for a simple $9$-fold flop of Grassmannian type",
+    "authors": [
+      "Will Donovan",
+      "Wahei Hara",
+      "Micha\u0142 Kapustka",
+      "Marco Rampazzo"
+    ],
+    "summary": "The local simple $9$-fold flop of Grassmannian type is a birational\ntransformation between total spaces of vector bundles on the Grassmannians\n$\\mathrm{Gr}(2, 5)$ and $\\mathrm{Gr}(3, 5)$. We produce four different derived\nequivalences which commute with the pushforward functors for the flopping\ncontractions. These equivalences are realized by identifying four different\nwindow categories inside the derived category of coherent sheaves on an Artin\nstack. As an application, our approach provides a new proof of derived\nequivalence for a pair of non-birational Calabi-Yau threefolds realized as zero\nloci of sections of homogeneous vector bundles in Grassmannians.",
+    "published": "2025-10-07T17:44:55Z",
+    "updated": "2025-10-07T17:44:55Z",
+    "id": "http://arxiv.org/abs/2510.06184v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06184v1",
+    "categories": [
+      "math.AG",
+      "math.RT"
+    ],
+    "primary_category": "math.AG"
+  },
+  {
+    "title": "VecInfer: Efficient LLM Inference with Low-Bit KV Cache via\n  Outlier-Suppressed Vector Quantization",
+    "authors": [
+      "Dingyu Yao",
+      "Chenxu Yang",
+      "Zhengyang Tong",
+      "Zheng Lin",
+      "Wei Liu",
+      "Jian Luan",
+      "Weiping Wang"
+    ],
+    "summary": "The Key-Value (KV) cache introduces substantial memory overhead during large\nlanguage model (LLM) inference. Although existing vector quantization (VQ)\nmethods reduce KV cache usage and provide flexible representational capacity\nacross bit-widths, they suffer severe performance degradation at ultra-low\nbit-widths due to key cache outliers that hinder effective codebook\nutilization. To address this challenge, we propose VecInfer, a novel VQ method\nfor aggressive KV cache compression while enabling efficient inference. By\napplying smooth and Hadamard transformations, VecInfer suppresses outliers in\nthe key cache, enabling the codebook to comprehensively cover the original data\ndistribution and thereby reducing quantization difficulty. To facilitate\nefficient deployment, we design an optimized CUDA kernel that fuses computation\nwith dequantization to minimize memory access overhead. Extensive evaluations\ndemonstrate that VecInfer consistently outperforms existing quantization\nbaselines across both long-context understanding and mathematical reasoning\ntasks. With only 2-bit quantization, VecInfer achieves performance comparable\nto full precision, while delivering up to $\\mathbf{2.7\\times}$ speedup in\nlarge-batch self-attention computation and $\\mathbf{8.3\\times}$ reduction in\nsingle-batch end-to-end latency on Llama-3.1-8B with a 196k sequence length.",
+    "published": "2025-10-07T17:35:28Z",
+    "updated": "2025-10-07T17:35:28Z",
+    "id": "http://arxiv.org/abs/2510.06175v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06175v1",
+    "categories": [
+      "cs.CL"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Time-reassigned synchrosqueezing frequency-domain chirplet transform for\n  multicomponent signals with intersecting group delay curves",
+    "authors": [
+      "Shuixin Li",
+      "Jiecheng Chen",
+      "Qingtang Jiang",
+      "Lin Li"
+    ],
+    "summary": "To analyze signals with rapid frequency variations or transient components,\nthe time-reassigned synchrosqueezing transform (TSST) and its variants have\nbeen recently proposed. Unlike the traditional synchrosqueezing transform, TSST\nsqueezes the time-frequency (TF) coefficients along the group delay (GD)\ntrajectories rather than the instantaneous frequency trajectories. Although\nTSST methods perform well in analyzing transient signals, they are\nfundamentally limited in processing multicomponent signals with intersecting GD\ncurves. This limitation compromises the accuracy of both feature extraction and\nsignal component recovery, thereby significantly reducing the interpretability\nof time-frequency representations (TFRs). This is particularly problematic in\nbroadband signal processing systems, where the linearity of the phase response\nis critical and precise measurement of group delay dispersion (GDD) is\nessential.\n  Motivated by the superior capability of frequency-domain signal modeling in\ncharacterizing rapidly frequency-varying signals, this paper proposes a novel\nthree-dimensional time-frequency-group delay dispersion (TF-GDD) representation\nbased on the frequency-domain chirplet transform. A subsequent time-reassigned\nsynchrosqueezing frequency-domain chirplet transform (TSFCT) is introduced to\nachieve a sharper TF-GDD distribution and more accurate GD estimation. For mode\nretrieval, a novel frequency-domain group signal separation operation (FGSSO)\nis proposed.The theoretical contributions include a derivation of the\napproximation error for the GD and GDD reference functions and an establishment\nof the error bounds for FGSSO-based mode retrieval. Experimental results\ndemonstrate that the proposed TSFCT and FGSSO effectively estimate GDs and\nretrieve modes--even for modes with intersecting GD trajectories.",
+    "published": "2025-10-07T17:34:37Z",
+    "updated": "2025-10-07T17:34:37Z",
+    "id": "http://arxiv.org/abs/2510.06173v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06173v1",
+    "categories": [
+      "eess.SP",
+      "cs.NA",
+      "math.NA"
+    ],
+    "primary_category": "eess.SP"
+  },
+  {
+    "title": "Smartphone-based iris recognition through high-quality visible-spectrum\n  iris image capture.V2",
+    "authors": [
+      "Naveenkumar G Venkataswamy",
+      "Yu Liu",
+      "Soumyabrata Dey",
+      "Stephanie Schuckers",
+      "Masudul H Imtiaz"
+    ],
+    "summary": "Smartphone-based iris recognition in the visible spectrum (VIS) remains\ndifficult due to illumination variability, pigmentation differences, and the\nabsence of standardized capture controls. This work presents a compact\nend-to-end pipeline that enforces ISO/IEC 29794-6 quality compliance at\nacquisition and demonstrates that accurate VIS iris recognition is feasible on\ncommodity devices. Using a custom Android application performing real-time\nframing, sharpness evaluation, and feedback, we introduce the CUVIRIS dataset\nof 752 compliant images from 47 subjects. A lightweight MobileNetV3-based\nmulti-task segmentation network (LightIrisNet) is developed for efficient\non-device processing, and a transformer matcher (IrisFormer) is adapted to the\nVIS domain. Under a standardized protocol and comparative benchmarking against\nprior CNN baselines, OSIRIS attains a TAR of 97.9% at FAR=0.01 (EER=0.76%),\nwhile IrisFormer, trained only on UBIRIS.v2, achieves an EER of 0.057% on\nCUVIRIS. The acquisition app, trained models, and a public subset of the\ndataset are released to support reproducibility. These results confirm that\nstandardized capture and VIS-adapted lightweight models enable accurate and\npractical iris recognition on smartphones.",
+    "published": "2025-10-07T17:33:41Z",
+    "updated": "2025-10-07T17:33:41Z",
+    "id": "http://arxiv.org/abs/2510.06170v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06170v1",
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "eess.IV"
+  },
+  {
+    "title": "General diffraction properties of aperiodic slit arrays",
+    "authors": [
+      "Thiago de Souza Ferreira",
+      "Daniel Jonathan",
+      "Antonio Z. Khoury",
+      "Daniel S. Tasca"
+    ],
+    "summary": "Fraunhofer diffraction plays a vital role in experimental physics not only\nbecause it accurately describes the behaviour of light in the usual propagation\nlimit, but also because it links the diffracted light with the scattering\nobject through one of the most important mathematical transformations in\nphysics: the Fourier transform. Acting as a probe in material characterisation\nas well as used as a tool for particle trapping or sensing, the pattern of\ninterference maxima resulting from the Fraunhofer diffraction through periodic\nscattering is an ubiquitous routine. In this paper we analyse the Fraunhofer\ndiffraction resulting from the much less studied aperiodic scatter of the\nlight. We provide general conditions for the experimental observation of the\npeaks of interference maxima featured into patterns that display periodic\nstructures on a number of distance scales. Our theoretical analysis is\nsupported by thorough experimental demonstrations.",
+    "published": "2025-10-07T17:19:36Z",
+    "updated": "2025-10-07T17:19:36Z",
+    "id": "http://arxiv.org/abs/2510.06148v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06148v1",
+    "categories": [
+      "physics.optics",
+      "physics.class-ph",
+      "quant-ph"
+    ],
+    "primary_category": "physics.optics"
+  },
+  {
+    "title": "Parallel Tokenizers: Rethinking Vocabulary Design for Cross-Lingual\n  Transfer",
+    "authors": [
+      "Muhammad Dehan Al Kautsar",
+      "Fajri Koto"
+    ],
+    "summary": "Tokenization defines the foundation of multilingual language models by\ndetermining how words are represented and shared across languages. However,\nexisting methods often fail to support effective cross-lingual transfer because\nsemantically equivalent words are assigned distinct embeddings. For example, \"I\neat rice\" in English and \"Ina cin shinkafa\" in Hausa are typically mapped to\ndifferent vocabulary indices, preventing shared representations and limiting\ncross-lingual generalization. We introduce parallel tokenizers. This new\nframework trains tokenizers monolingually and then aligns their vocabularies\nexhaustively using bilingual dictionaries or word-to-word translation, ensuring\nconsistent indices for semantically equivalent words. This alignment enforces a\nshared semantic space across languages while naturally improving fertility\nbalance. To assess their effectiveness, we pretrain a transformer encoder from\nscratch on thirteen low-resource languages and evaluate it on sentiment\nanalysis, hate speech detection, emotion classification, and sentence embedding\nsimilarity. Across all tasks, models trained with parallel tokenizers\noutperform conventional multilingual baselines, confirming that rethinking\ntokenization is essential for advancing multilingual representation\nlearning--especially in low-resource settings.",
+    "published": "2025-10-07T17:05:49Z",
+    "updated": "2025-10-07T17:05:49Z",
+    "id": "http://arxiv.org/abs/2510.06128v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06128v1",
+    "categories": [
+      "cs.CL"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Downsized and Compromised?: Assessing the Faithfulness of Model\n  Compression",
+    "authors": [
+      "Moumita Kamal",
+      "Douglas A. Talbert"
+    ],
+    "summary": "In real-world applications, computational constraints often require\ntransforming large models into smaller, more efficient versions through model\ncompression. While these techniques aim to reduce size and computational cost\nwithout sacrificing performance, their evaluations have traditionally focused\non the trade-off between size and accuracy, overlooking the aspect of model\nfaithfulness. This limited view is insufficient for high-stakes domains like\nhealthcare, finance, and criminal justice, where compressed models must remain\nfaithful to the behavior of their original counterparts. This paper presents a\nnovel approach to evaluating faithfulness in compressed models, moving beyond\nstandard metrics. We introduce and demonstrate a set of faithfulness metrics\nthat capture how model behavior changes post-compression. Our contributions\ninclude introducing techniques to assess predictive consistency between the\noriginal and compressed models using model agreement, and applying chi-squared\ntests to detect statistically significant changes in predictive patterns across\nboth the overall dataset and demographic subgroups, thereby exposing shifts\nthat aggregate fairness metrics may obscure. We demonstrate our approaches by\napplying quantization and pruning to artificial neural networks (ANNs) trained\non three diverse and socially meaningful datasets. Our findings show that high\naccuracy does not guarantee faithfulness, and our statistical tests detect\nsubtle yet significant shifts that are missed by standard metrics, such as\nAccuracy and Equalized Odds. The proposed metrics provide a practical and more\ndirect method for ensuring that efficiency gains through compression do not\ncompromise the fairness or faithfulness essential for trustworthy AI.",
+    "published": "2025-10-07T17:05:02Z",
+    "updated": "2025-10-07T17:05:02Z",
+    "id": "http://arxiv.org/abs/2510.06125v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06125v1",
+    "categories": [
+      "cs.LG",
+      "I.2.6"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Lagrangian Dual Sections: A Topological Perspective on Hidden Convexity",
+    "authors": [
+      "Venkat Chandrasekaran",
+      "Timothy Duff",
+      "Jose Israel Rodriguez",
+      "Kevin Shu"
+    ],
+    "summary": "Hidden convexity is a powerful idea in optimization: under the right\ntransformations, nonconvex problems that are seemingly intractable can be\nsolved efficiently using convex optimization. We introduce the notion of a\nLagrangian dual section of a nonlinear program defined over a topological\nspace, and we use it to give a sufficient condition for a nonconvex\noptimization problem to have a natural convex reformulation. We emphasize the\ntopological nature of our framework, using only continuity and connectedness\nproperties of a certain Lagrangian formulation of the problem to prove our\nresults. We demonstrate the practical consequences of our framework in a range\nof applications and by developing new algorithmic methodology. First, we\npresent families of nonconvex problem instances that can be transformed to\nconvex programs in the context of spectral inverse problems -- which include\nquadratically constrained quadratic optimization and Stiefel manifold\noptimization as special cases -- as well as unbalanced Procrustes problems. In\neach of these applications, we both generalize prior results on hidden\nconvexity and provide unifying proofs. For the case of the spectral inverse\nproblems, we also present a Lie-theoretic approach that illustrates connections\nwith the Kostant convexity theorem. Second, we introduce new algorithmic ideas\nthat can be used to find globally optimal solutions to both Lagrangian forms of\nan optimization problem as well as constrained optimization problems when the\nunderlying topological space is a Riemannian manifold.",
+    "published": "2025-10-07T16:45:30Z",
+    "updated": "2025-10-08T01:12:51Z",
+    "id": "http://arxiv.org/abs/2510.06112v2",
+    "pdf_url": "http://arxiv.org/pdf/2510.06112v2",
+    "categories": [
+      "math.OC"
+    ],
+    "primary_category": "math.OC"
+  },
+  {
+    "title": "Distributional Semantics Tracing: A Framework for Explaining\n  Hallucinations in Large Language Models",
+    "authors": [
+      "Gagan Bhatia",
+      "Somayajulu G Sripada",
+      "Kevin Allan",
+      "Jacobo Azcona"
+    ],
+    "summary": "Large Language Models (LLMs) are prone to hallucination, the generation of\nplausible yet factually incorrect statements. This work investigates the\nintrinsic, architectural origins of this failure mode through three primary\ncontributions.First, to enable the reliable tracing of internal semantic\nfailures, we propose \\textbf{Distributional Semantics Tracing (DST)}, a unified\nframework that integrates established interpretability techniques to produce a\ncausal map of a model's reasoning, treating meaning as a function of context\n(distributional semantics). Second, we pinpoint the model's layer at which a\nhallucination becomes inevitable, identifying a specific \\textbf{commitment\nlayer} where a model's internal representations irreversibly diverge from\nfactuality. Third, we identify the underlying mechanism for these failures. We\nobserve a conflict between distinct computational pathways, which we interpret\nusing the lens of dual-process theory: a fast, heuristic \\textbf{associative\npathway} (akin to System 1) and a slow, deliberate \\textbf{contextual pathway}\n(akin to System 2), leading to predictable failure modes such as\n\\textit{Reasoning Shortcut Hijacks}. Our framework's ability to quantify the\ncoherence of the contextual pathway reveals a strong negative correlation\n($\\rho = -0.863$) with hallucination rates, implying that these failures are\npredictable consequences of internal semantic weakness. The result is a\nmechanistic account of how, when, and why hallucinations occur within the\nTransformer architecture.",
+    "published": "2025-10-07T16:40:31Z",
+    "updated": "2025-10-07T16:40:31Z",
+    "id": "http://arxiv.org/abs/2510.06107v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06107v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CE"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "On the Quantum Equivalence between $S|LWE\\rangle$ and $ISIS$",
+    "authors": [
+      "Andr\u00e9 Chailloux",
+      "Paul Hermouet"
+    ],
+    "summary": "Chen, Liu, and Zhandry [CLZ22] introduced the problems $S|LWE\\rangle$ and\n$C|LWE\\rangle$ as quantum analogues of the Learning with Errors problem,\ndesigned to construct quantum algorithms for the Inhomogeneous Short Integer\nSolution ($ISIS$) problem. Several later works have used this framework for\nconstructing new quantum algorithms in specific cases. However, the general\nrelation between all these problems is still unknown. In this paper, we\ninvestigate the equivalence between $S|LWE\\rangle$ and $ISIS$. We present the\nfirst fully generic reduction from $ISIS$ to $S|LWE\\rangle$, valid even in the\npresence of errors in the underlying algorithms. We then explore the reverse\ndirection, introducing an inhomogeneous variant of $C|LWE\\rangle$, denoted\n$IC|LWE\\rangle$, and show that $IC|LWE\\rangle$ reduces to $S|LWE\\rangle$.\nFinally, we prove that, under certain recoverability conditions, an algorithm\nfor $ISIS$ can be transformed into one for $S|LWE\\rangle$. We instantiate this\nreverse reduction by tweaking a known algorithm for $(I)SIS_\\infty$ in order to\nconstruct quantum algorithm for $S|LWE\\rangle$ when the alphabet size q is a\nsmall power of 2, recovering some results of Bai et al. [BJK+ 25]. Our results\nthus clarify the landscape of reductions between $S|LWE\\rangle$ and $ISIS$, and\nwe show both their strong connection as well as the remaining barriers for\nshowing full equivalence.",
+    "published": "2025-10-07T16:25:47Z",
+    "updated": "2025-10-07T16:25:47Z",
+    "id": "http://arxiv.org/abs/2510.06097v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06097v1",
+    "categories": [
+      "quant-ph",
+      "cs.CR"
+    ],
+    "primary_category": "quant-ph"
+  },
+  {
+    "title": "EmoHRNet: High-Resolution Neural Network Based Speech Emotion\n  Recognition",
+    "authors": [
+      "Akshay Muppidi",
+      "Martin Radfar"
+    ],
+    "summary": "Speech emotion recognition (SER) is pivotal for enhancing human-machine\ninteractions. This paper introduces \"EmoHRNet\", a novel adaptation of\nHigh-Resolution Networks (HRNet) tailored for SER. The HRNet structure is\ndesigned to maintain high-resolution representations from the initial to the\nfinal layers. By transforming audio samples into spectrograms, EmoHRNet\nleverages the HRNet architecture to extract high-level features. EmoHRNet's\nunique architecture maintains high-resolution representations throughout,\ncapturing both granular and overarching emotional cues from speech signals. The\nmodel outperforms leading models, achieving accuracies of 92.45% on RAVDESS,\n80.06% on IEMOCAP, and 92.77% on EMOVO. Thus, we show that EmoHRNet sets a new\nbenchmark in the SER domain.",
+    "published": "2025-10-07T15:59:40Z",
+    "updated": "2025-10-07T15:59:40Z",
+    "id": "http://arxiv.org/abs/2510.06072v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06072v1",
+    "categories": [
+      "cs.SD",
+      "cs.LG"
+    ],
+    "primary_category": "cs.SD"
+  },
+  {
+    "title": "There is More to Attention: Statistical Filtering Enhances Explanations\n  in Vision Transformers",
+    "authors": [
+      "Meghna P Ayyar",
+      "Jenny Benois-Pineau",
+      "Akka Zemmari"
+    ],
+    "summary": "Explainable AI (XAI) has become increasingly important with the rise of large\ntransformer models, yet many explanation methods designed for CNNs transfer\npoorly to Vision Transformers (ViTs). Existing ViT explanations often rely on\nattention weights, which tend to yield noisy maps as they capture\ntoken-to-token interactions within each layer.While attribution methods\nincorporating MLP blocks have been proposed, we argue that attention remains a\nvaluable and interpretable signal when properly filtered. We propose a method\nthat combines attention maps with a statistical filtering, initially proposed\nfor CNNs, to remove noisy or uninformative patterns and produce more faithful\nexplanations. We further extend our approach with a class-specific variant that\nyields discriminative explanations. Evaluation against popular state-of-the-art\nmethods demonstrates that our approach produces sharper and more interpretable\nmaps. In addition to perturbation-based faithfulness metrics, we incorporate\nhuman gaze data to assess alignment with human perception, arguing that human\ninterpretability remains essential for XAI. Across multiple datasets, our\napproach consistently outperforms or is comparable to the SOTA methods while\nremaining efficient and human plausible.",
+    "published": "2025-10-07T15:59:04Z",
+    "updated": "2025-10-07T15:59:04Z",
+    "id": "http://arxiv.org/abs/2510.06070v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06070v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "Universal Neural Architecture Space: Covering ConvNets, Transformers and\n  Everything in Between",
+    "authors": [
+      "Ond\u0159ej T\u00fdbl",
+      "Luk\u00e1\u0161 Neumann"
+    ],
+    "summary": "We introduce Universal Neural Architecture Space (UniNAS), a generic search\nspace for neural architecture search (NAS) which unifies convolutional\nnetworks, transformers, and their hybrid architectures under a single, flexible\nframework. Our approach enables discovery of novel architectures as well as\nanalyzing existing architectures in a common framework. We also propose a new\nsearch algorithm that allows traversing the proposed search space, and\ndemonstrate that the space contains interesting architectures, which, when\nusing identical training setup, outperform state-of-the-art hand-crafted\narchitectures. Finally, a unified toolkit including a standardized training and\nevaluation protocol is introduced to foster reproducibility and enable fair\ncomparison in NAS research. Overall, this work opens a pathway towards\nsystematically exploring the full spectrum of neural architectures with a\nunified graph-based NAS perspective.",
+    "published": "2025-10-07T15:31:40Z",
+    "updated": "2025-10-07T15:31:40Z",
+    "id": "http://arxiv.org/abs/2510.06035v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06035v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "RamPINN: Recovering Raman Spectra From Coherent Anti-Stokes Spectra\n  Using Embedded Physics",
+    "authors": [
+      "Sai Karthikeya Vemuri",
+      "Adithya Ashok Chalain Valapil",
+      "Tim B\u00fcchner",
+      "Joachim Denzler"
+    ],
+    "summary": "Transferring the recent advancements in deep learning into scientific\ndisciplines is hindered by the lack of the required large-scale datasets for\ntraining. We argue that in these knowledge-rich domains, the established body\nof scientific theory provides reliable inductive biases in the form of\ngoverning physical laws. We address the ill-posed inverse problem of recovering\nRaman spectra from noisy Coherent Anti-Stokes Raman Scattering (CARS)\nmeasurements, as the true Raman signal here is suppressed by a dominating\nnon-resonant background. We propose RamPINN, a model that learns to recover\nRaman spectra from given CARS spectra. Our core methodological contribution is\na physics-informed neural network that utilizes a dual-decoder architecture to\ndisentangle resonant and non-resonant signals. This is done by enforcing the\nKramers-Kronig causality relations via a differentiable Hilbert transform loss\non the resonant and a smoothness prior on the non-resonant part of the signal.\nTrained entirely on synthetic data, RamPINN demonstrates strong zero-shot\ngeneralization to real-world experimental data, explicitly closing this gap and\nsignificantly outperforming existing baselines. Furthermore, we show that\ntraining with these physics-based losses alone, without access to any\nground-truth Raman spectra, still yields competitive results. This work\nhighlights a broader concept: formal scientific rules can act as a potent\ninductive bias, enabling robust, self-supervised learning in data-limited\nscientific domains.",
+    "published": "2025-10-07T15:18:44Z",
+    "updated": "2025-10-07T15:18:44Z",
+    "id": "http://arxiv.org/abs/2510.06020v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06020v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "ARISE: An Adaptive Resolution-Aware Metric for Test-Time Scaling\n  Evaluation in Large Reasoning Models",
+    "authors": [
+      "Zhangyue Yin",
+      "Qiushi Sun",
+      "Zhiyuan Zeng",
+      "Zhiyuan Yu",
+      "Qipeng Guo",
+      "Xuanjing Huang",
+      "Xipeng Qiu"
+    ],
+    "summary": "Test-time scaling has emerged as a transformative paradigm for enhancing the\nperformance of large reasoning models, enabling dynamic allocation of\ncomputational resources during inference. However, as the landscape of\nreasoning models rapidly expands, a critical question remains: how can we\nsystematically compare and evaluate the test-time scaling capabilities across\ndifferent models? In this paper, we introduce ARISE (Adaptive Resolution-aware\nScaling Evaluation), a novel metric specifically designed to assess the\ntest-time scaling effectiveness of large reasoning models. Unlike existing\nevaluation approaches, ARISE incorporates two key innovations: (1) sample-level\nawareness that effectively penalizes negative scaling behaviors where increased\ncomputation leads to performance degradation, and (2) a dynamic sampling\nmechanism that mitigates the impact of accuracy fluctuations and token count\ninstability on the final assessment. We conduct comprehensive experiments\nevaluating state-of-the-art reasoning models across diverse domains including\nmathematical reasoning, code generation, and agentic tasks. Our results\ndemonstrate that ARISE provides a reliable and fine-grained measurement of\ntest-time scaling capabilities, revealing significant variations in scaling\nefficiency across models. Notably, our evaluation identifies Claude Opus as\nexhibiting superior scaling characteristics compared to other contemporary\nreasoning models.",
+    "published": "2025-10-07T15:10:51Z",
+    "updated": "2025-10-07T15:10:51Z",
+    "id": "http://arxiv.org/abs/2510.06014v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06014v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "title": "MASA: Rethinking the Representational Bottleneck in LoRA with Multi-A\n  Shared Adaptation",
+    "authors": [
+      "Qin Dong",
+      "Yuntian Tang",
+      "Heming Jia",
+      "Yunhang Shen",
+      "Bohan Jia",
+      "Wenxuan Huang",
+      "Lianyue Zhang",
+      "Jiao Xie",
+      "Shaohui Lin"
+    ],
+    "summary": "Low-Rank Adaptation (LoRA) has emerged as a dominant method in\nParameter-Efficient Fine-Tuning (PEFT) for large language models, which\naugments the transformer layer with one down-projection $A$ and one\nup-projection $B$. However, LoRA's reliance on a single down-projection matrix\n($A$) creates a representational bottleneck, as this solitary feature extractor\nis inherently insufficient for capturing the diverse signals required by\ncomplex tasks. This motivates our architectural shift to focus on enriching the\nfeature adaptation to improve the downstream task adaptation ability. We\npropose MASA (Multi-$A$ Shared Adaptation), an architecture that implements a\nmulti-$A$, single-$B$ structure where the multi-$A$ expert ensemble is\nasymmetrically shared across layers to ensure parameter efficiency. In MASA,\nthese specialized experts capture diverse features, which are then integrated\nby a single, layer-specific $B$-matrix. The effectiveness and versatility of\nour method are validated through a comprehensive suite of experiments spanning\nmulti-domain generalization, single-domain specialization, and multi-task\nreasoning. For example, on the MMLU benchmark, MASA achieves an average\naccuracy of 59.62%, outperforming the standard LoRA by 1.08 points (a relative\nimprovement of 1.84%) with comparable learnable parameters of 0.52%.",
+    "published": "2025-10-07T15:06:46Z",
+    "updated": "2025-10-07T15:06:46Z",
+    "id": "http://arxiv.org/abs/2510.06005v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06005v1",
+    "categories": [
+      "cs.CL"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Human3R: Everyone Everywhere All at Once",
+    "authors": [
+      "Yue Chen",
+      "Xingyu Chen",
+      "Yuxuan Xue",
+      "Anpei Chen",
+      "Yuliang Xiu",
+      "Gerard Pons-Moll"
+    ],
+    "summary": "We present Human3R, a unified, feed-forward framework for online 4D\nhuman-scene reconstruction, in the world frame, from casually captured\nmonocular videos. Unlike previous approaches that rely on multi-stage\npipelines, iterative contact-aware refinement between humans and scenes, and\nheavy dependencies, e.g., human detection, depth estimation, and SLAM\npre-processing, Human3R jointly recovers global multi-person SMPL-X bodies\n(\"everyone\"), dense 3D scene (\"everywhere\"), and camera trajectories in a\nsingle forward pass (\"all-at-once\"). Our method builds upon the 4D online\nreconstruction model CUT3R, and uses parameter-efficient visual prompt tuning,\nto strive to preserve CUT3R's rich spatiotemporal priors, while enabling direct\nreadout of multiple SMPL-X bodies. Human3R is a unified model that eliminates\nheavy dependencies and iterative refinement. After being trained on the\nrelatively small-scale synthetic dataset BEDLAM for just one day on one GPU, it\nachieves superior performance with remarkable efficiency: it reconstructs\nmultiple humans in a one-shot manner, along with 3D scenes, in one stage, at\nreal-time speed (15 FPS) with a low memory footprint (8 GB). Extensive\nexperiments demonstrate that Human3R delivers state-of-the-art or competitive\nperformance across tasks, including global human motion estimation, local human\nmesh recovery, video depth estimation, and camera pose estimation, with a\nsingle unified model. We hope that Human3R will serve as a simple yet strong\nbaseline, be easily extended for downstream applications.Code available in\nhttps://fanegg.github.io/Human3R",
+    "published": "2025-10-07T17:59:52Z",
+    "updated": "2025-10-07T17:59:52Z",
+    "id": "http://arxiv.org/abs/2510.06219v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06219v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "EgoNight: Towards Egocentric Vision Understanding at Night with a\n  Challenging Benchmark",
+    "authors": [
+      "Deheng Zhang",
+      "Yuqian Fu",
+      "Runyi Yang",
+      "Yang Miao",
+      "Tianwen Qian",
+      "Xu Zheng",
+      "Guolei Sun",
+      "Ajad Chhatkuli",
+      "Xuanjing Huang",
+      "Yu-Gang Jiang",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "summary": "Most existing benchmarks for egocentric vision understanding focus primarily\non daytime scenarios, overlooking the low-light conditions that are inevitable\nin real-world applications. To investigate this gap, we present EgoNight, the\nfirst comprehensive benchmark for nighttime egocentric vision, with visual\nquestion answering (VQA) as the core task. A key feature of EgoNight is the\nintroduction of day-night aligned videos, which enhance night annotation\nquality using the daytime data and reveal clear performance gaps between\nlighting conditions. To achieve this, we collect both synthetic videos rendered\nby Blender and real-world recordings, ensuring that scenes and actions are\nvisually and temporally aligned. Leveraging these paired videos, we construct\nEgoNight-VQA, supported by a novel day-augmented night auto-labeling engine and\nrefinement through extensive human verification. Each QA pair is double-checked\nby annotators for reliability. In total, EgoNight-VQA contains 3658 QA pairs\nacross 90 videos, spanning 12 diverse QA types, with more than 300 hours of\nhuman work. Evaluations of state-of-the-art multimodal large language models\n(MLLMs) reveal substantial performance drops when transferring from day to\nnight, underscoring the challenges of reasoning under low-light conditions.\nBeyond VQA, EgoNight also introduces two auxiliary tasks, day-night\ncorrespondence retrieval and egocentric depth estimation at night, that further\nexplore the boundaries of existing models. We believe EgoNight-VQA provides a\nstrong foundation for advancing application-driven egocentric vision research\nand for developing models that generalize across illumination domains. All the\ndata and code will be made available upon acceptance.",
+    "published": "2025-10-07T17:59:47Z",
+    "updated": "2025-10-07T17:59:47Z",
+    "id": "http://arxiv.org/abs/2510.06218v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06218v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular\n  Reasoning",
+    "authors": [
+      "Jiaru Zou",
+      "Soumya Roy",
+      "Vinay Kumar Verma",
+      "Ziyi Wang",
+      "David Wipf",
+      "Pan Lu",
+      "Sumit Negi",
+      "James Zou",
+      "Jingrui He"
+    ],
+    "summary": "Process Reward Models (PRMs) have recently emerged as a powerful framework\nfor enhancing the reasoning capabilities of large reasoning models (LRMs),\nparticularly in the context of test-time scaling (TTS). However, their\npotential for supervising LRMs on tabular reasoning domains remains\nunderexplored. Through detailed empirical analyses, we identify that existing\nPRMs, though widely adopted for supervising text-only reasoning steps, struggle\nwith table-specific operations such as sub-table retrieval and schema\ninteraction, leading to critical performance bottlenecks. To address this\nlimitation, we propose TaTToo, a novel table-grounded PRM framework that (i)\nreasons explicitly over tabular reasoning steps and (ii) integrates tool-based\nverification to provide precise reward supervision. Concretely, we first design\na scalable data curation pipeline that constructs over 60k high-quality\nstep-level annotations by integrating table verification rationales with\ntool-based executions. Building on the collected data, we train TaTToo with a\ndual-stage paradigm: cold-start supervised fine-tuning to capture tool-use\nreasoning patterns, followed by reinforcement learning with tool-grounded\nreward shaping to align our model with table-based verification. We provide a\ncomprehensive evaluation of the policy improvement induced by our newly\ndesigned PRM. Across 5 challenging tabular reasoning benchmarks covering\nnumerical reasoning, fact-checking, and data analysis, TaTToo improves\ndownstream policy LRMs by 30.9% at inference, surpasses strong PRM baselines\nsuch as Qwen-2.5-Math-PRM-72B with only 8B parameters, and demonstrates strong\ngeneralizability across diverse TTS strategies.",
+    "published": "2025-10-07T17:59:41Z",
+    "updated": "2025-10-07T17:59:41Z",
+    "id": "http://arxiv.org/abs/2510.06217v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06217v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "title": "Dropping the D: RGB-D SLAM Without the Depth Sensor",
+    "authors": [
+      "Mert Kiray",
+      "Alican Karaomer",
+      "Benjamin Busam"
+    ],
+    "summary": "We present DropD-SLAM, a real-time monocular SLAM system that achieves\nRGB-D-level accuracy without relying on depth sensors. The system replaces\nactive depth input with three pretrained vision modules: a monocular metric\ndepth estimator, a learned keypoint detector, and an instance segmentation\nnetwork. Dynamic objects are suppressed using dilated instance masks, while\nstatic keypoints are assigned predicted depth values and backprojected into 3D\nto form metrically scaled features. These are processed by an unmodified RGB-D\nSLAM back end for tracking and mapping. On the TUM RGB-D benchmark, DropD-SLAM\nattains 7.4 cm mean ATE on static sequences and 1.8 cm on dynamic sequences,\nmatching or surpassing state-of-the-art RGB-D methods while operating at 22 FPS\non a single GPU. These results suggest that modern pretrained vision models can\nreplace active depth sensors as reliable, real-time sources of metric scale,\nmarking a step toward simpler and more cost-effective SLAM systems.",
+    "published": "2025-10-07T17:59:30Z",
+    "updated": "2025-10-07T17:59:30Z",
+    "id": "http://arxiv.org/abs/2510.06216v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06216v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "Fine-grained Defocus Blur Control for Generative Image Models",
+    "authors": [
+      "Ayush Shrivastava",
+      "Connelly Barnes",
+      "Xuaner Zhang",
+      "Lingzhi Zhang",
+      "Andrew Owens",
+      "Sohrab Amirghodsi",
+      "Eli Shechtman"
+    ],
+    "summary": "Current text-to-image diffusion models excel at generating diverse,\nhigh-quality images, yet they struggle to incorporate fine-grained camera\nmetadata such as precise aperture settings. In this work, we introduce a novel\ntext-to-image diffusion framework that leverages camera metadata, or EXIF data,\nwhich is often embedded in image files, with an emphasis on generating\ncontrollable lens blur. Our method mimics the physical image formation process\nby first generating an all-in-focus image, estimating its monocular depth,\npredicting a plausible focus distance with a novel focus distance transformer,\nand then forming a defocused image with an existing differentiable lens blur\nmodel. Gradients flow backwards through this whole process, allowing us to\nlearn without explicit supervision to generate defocus effects based on content\nelements and the provided EXIF data. At inference time, this enables precise\ninteractive user control over defocus effects while preserving scene contents,\nwhich is not achievable with existing diffusion models. Experimental results\ndemonstrate that our model enables superior fine-grained control without\naltering the depicted scene.",
+    "published": "2025-10-07T17:59:15Z",
+    "updated": "2025-10-07T17:59:15Z",
+    "id": "http://arxiv.org/abs/2510.06215v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06215v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "Stratified GRPO: Handling Structural Heterogeneity in Reinforcement\n  Learning of LLM Search Agents",
+    "authors": [
+      "Mingkang Zhu",
+      "Xi Chen",
+      "Bei Yu",
+      "Hengshuang Zhao",
+      "Jiaya Jia"
+    ],
+    "summary": "Large language model (LLM) agents increasingly rely on external tools such as\nsearch engines to solve complex, multi-step problems, and reinforcement\nlearning (RL) has become a key paradigm for training them. However, the\ntrajectories of search agents are structurally heterogeneous, where variations\nin the number, placement, and outcomes of search calls lead to fundamentally\ndifferent answer directions and reward distributions. Standard policy gradient\nmethods, which use a single global baseline, suffer from what we identify and\nformalize as cross-stratum bias-an \"apples-to-oranges\" comparison of\nheterogeneous trajectories. This cross-stratum bias distorts credit assignment\nand hinders exploration of complex, multi-step search strategies. To address\nthis, we propose Stratified GRPO, whose central component, Stratified Advantage\nNormalization (SAN), partitions trajectories into homogeneous strata based on\ntheir structural properties and computes advantages locally within each\nstratum. This ensures that trajectories are evaluated only against their true\npeers. Our analysis proves that SAN eliminates cross-stratum bias, yields\nconditionally unbiased unit-variance estimates inside each stratum, and retains\nthe global unbiasedness and unit-variance properties enjoyed by standard\nnormalization, resulting in a more pure and scale-stable learning signal. To\nimprove practical stability under finite-sample regimes, we further linearly\nblend SAN with the global estimator. Extensive experiments on diverse\nsingle-hop and multi-hop question-answering benchmarks demonstrate that\nStratified GRPO consistently and substantially outperforms GRPO by up to 11.3\npoints, achieving higher training rewards, greater training stability, and more\neffective search policies. These results establish stratification as a\nprincipled remedy for structural heterogeneity in RL for LLM search agents.",
+    "published": "2025-10-07T17:59:13Z",
+    "updated": "2025-10-07T17:59:13Z",
+    "id": "http://arxiv.org/abs/2510.06214v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06214v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Training Dynamics Impact Post-Training Quantization Robustness",
+    "authors": [
+      "Albert Catalan-Tatjer",
+      "Niccol\u00f2 Ajroldi",
+      "Jonas Geiping"
+    ],
+    "summary": "While post-training quantization is widely adopted for efficient deployment\nof large language models, the mechanisms underlying quantization robustness\nremain unclear. We conduct a comprehensive analysis of quantization degradation\nacross open-source language model training trajectories up to 32B parameters\nand 15T training tokens to accurately assess the relationship between training\ndynamics and quantization performance. Our key finding is that quantization\nerrors in large-scale training runs are driven by a complex interplay between\nlearning rate and other training hyperparameters. Specifically, once learning\nrates decay, validation loss and quantization error diverge, largely\nindependent of training data scale. To investigate interventions on the\ntraining dynamics and identify specific configurations that can modulate\nquantization robustness favorably, we train our own models in controlled\nexperiments up to 100B tokens. Our results challenge the assumption that\nincreasing dataset scale inherently compromises quantization effectiveness,\ndemonstrating instead that strategic training hyperparameter interventions can\nimprove quantization quality at scale.",
+    "published": "2025-10-07T17:59:07Z",
+    "updated": "2025-10-07T17:59:07Z",
+    "id": "http://arxiv.org/abs/2510.06213v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06213v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Geographical inequalities in mortality by age and gender in Italy,\n  2002-2019: insights from a spatial extension of the Lee-Carter model",
+    "authors": [
+      "Francesca Fiori",
+      "Andrea Riebler",
+      "Sara Martino"
+    ],
+    "summary": "Italy reports some of the lowest levels of mortality in the developed world.\nRecent evidence, however, suggests that even in low mortality countries\nimprovements may be slowing and regional inequalities widening. This study\ncontributes new empirical evidence to the debate by analysing mortality data by\nsingle year of age for males and females across 107 provinces in Italy from\n2002 to 2019. We extend the widely used Lee Carter model to include spatially\nvarying age specific effects, and further specify it to capture space age time\ninteractions. The model is estimated in a Bayesian framework using the inlabru\npackage, which builds on INLA (Integrated Nested Laplace Approximation) for non\nlinear models and facilitates the use of smoothing priors. This approach\nborrows strength across provinces and years, mitigating random fluctuations in\nsmall area death counts. Results demonstrate the value of such a granular\napproach, highlighting the existence of an uneven geography of mortality\ndespite overall national improvements. Mortality disadvantage is concentrated\nin parts of the Centre South and North West, while the Centre North and North\nEast fare relatively better. These geographical differences have widened since\n2010, with clear age and gender specific patterns, being more pronounced at\nyounger adult ages for men and at older adult ages for women. Future work may\ninvolve refining the analysis to mortality by cause of death or socioeconomic\nstatus, informing more targeted public health policies to address mortality\ndisparities across Italy's provinces.",
+    "published": "2025-10-07T17:58:36Z",
+    "updated": "2025-10-07T17:58:36Z",
+    "id": "http://arxiv.org/abs/2510.06210v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06210v1",
+    "categories": [
+      "stat.AP"
+    ],
+    "primary_category": "stat.AP"
+  },
+  {
+    "title": "Drive&Gen: Co-Evaluating End-to-End Driving and Video Generation Models",
+    "authors": [
+      "Jiahao Wang",
+      "Zhenpei Yang",
+      "Yijing Bai",
+      "Yingwei Li",
+      "Yuliang Zou",
+      "Bo Sun",
+      "Abhijit Kundu",
+      "Jose Lezama",
+      "Luna Yue Huang",
+      "Zehao Zhu",
+      "Jyh-Jing Hwang",
+      "Dragomir Anguelov",
+      "Mingxing Tan",
+      "Chiyu Max Jiang"
+    ],
+    "summary": "Recent advances in generative models have sparked exciting new possibilities\nin the field of autonomous vehicles. Specifically, video generation models are\nnow being explored as controllable virtual testing environments.\nSimultaneously, end-to-end (E2E) driving models have emerged as a streamlined\nalternative to conventional modular autonomous driving systems, gaining\npopularity for their simplicity and scalability. However, the application of\nthese techniques to simulation and planning raises important questions. First,\nwhile video generation models can generate increasingly realistic videos, can\nthese videos faithfully adhere to the specified conditions and be realistic\nenough for E2E autonomous planner evaluation? Second, given that data is\ncrucial for understanding and controlling E2E planners, how can we gain deeper\ninsights into their biases and improve their ability to generalize to\nout-of-distribution scenarios? In this work, we bridge the gap between the\ndriving models and generative world models (Drive&Gen) to address these\nquestions. We propose novel statistical measures leveraging E2E drivers to\nevaluate the realism of generated videos. By exploiting the controllability of\nthe video generation model, we conduct targeted experiments to investigate\ndistribution gaps affecting E2E planner performance. Finally, we show that\nsynthetic data produced by the video generation model offers a cost-effective\nalternative to real-world data collection. This synthetic data effectively\nimproves E2E model generalization beyond existing Operational Design Domains,\nfacilitating the expansion of autonomous vehicle services into new operational\ncontexts.",
+    "published": "2025-10-07T17:58:32Z",
+    "updated": "2025-10-07T17:58:32Z",
+    "id": "http://arxiv.org/abs/2510.06209v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06209v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "ShapeGen4D: Towards High Quality 4D Shape Generation from Videos",
+    "authors": [
+      "Jiraphon Yenphraphai",
+      "Ashkan Mirzaei",
+      "Jianqi Chen",
+      "Jiaxu Zou",
+      "Sergey Tulyakov",
+      "Raymond A. Yeh",
+      "Peter Wonka",
+      "Chaoyang Wang"
+    ],
+    "summary": "Video-conditioned 4D shape generation aims to recover time-varying 3D\ngeometry and view-consistent appearance directly from an input video. In this\nwork, we introduce a native video-to-4D shape generation framework that\nsynthesizes a single dynamic 3D representation end-to-end from the video. Our\nframework introduces three key components based on large-scale pre-trained 3D\nmodels: (i) a temporal attention that conditions generation on all frames while\nproducing a time-indexed dynamic representation; (ii) a time-aware point\nsampling and 4D latent anchoring that promote temporally consistent geometry\nand texture; and (iii) noise sharing across frames to enhance temporal\nstability. Our method accurately captures non-rigid motion, volume changes, and\neven topological transitions without per-frame optimization. Across diverse\nin-the-wild videos, our method improves robustness and perceptual fidelity and\nreduces failure modes compared with the baselines.",
+    "published": "2025-10-07T17:58:11Z",
+    "updated": "2025-10-07T17:58:11Z",
+    "id": "http://arxiv.org/abs/2510.06208v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06208v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "EmbodiedCoder: Parameterized Embodied Mobile Manipulation via Modern\n  Coding Model",
+    "authors": [
+      "Zefu Lin",
+      "Rongxu Cui",
+      "Chen Hanning",
+      "Xiangyu Wang",
+      "Junjia Xu",
+      "Xiaojuan Jin",
+      "Chen Wenbo",
+      "Hui Zhou",
+      "Lue Fan",
+      "Wenling Li",
+      "Zhaoxiang Zhang"
+    ],
+    "summary": "Recent advances in control robot methods, from end-to-end\nvision-language-action frameworks to modular systems with predefined\nprimitives, have advanced robots' ability to follow natural language\ninstructions. Nonetheless, many approaches still struggle to scale to diverse\nenvironments, as they often rely on large annotated datasets and offer limited\ninterpretability.In this work, we introduce EmbodiedCoder, a training-free\nframework for open-world mobile robot manipulation that leverages coding models\nto directly generate executable robot trajectories. By grounding high-level\ninstructions in code, EmbodiedCoder enables flexible object geometry\nparameterization and manipulation trajectory synthesis without additional data\ncollection or fine-tuning.This coding-based paradigm provides a transparent and\ngeneralizable way to connect perception with manipulation. Experiments on real\nmobile robots show that EmbodiedCoder achieves robust performance across\ndiverse long-term tasks and generalizes effectively to novel objects and\nenvironments.Our results demonstrate an interpretable approach for bridging\nhigh-level reasoning and low-level control, moving beyond fixed primitives\ntoward versatile robot intelligence. See the project page at:\nhttps://anonymous.4open.science/w/Embodied-Coder/",
+    "published": "2025-10-07T17:58:02Z",
+    "updated": "2025-10-07T17:58:02Z",
+    "id": "http://arxiv.org/abs/2510.06207v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06207v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "title": "TokenChain: A Discrete Speech Chain via Semantic Token Modeling",
+    "authors": [
+      "Mingxuan Wang",
+      "Satoshi Nakamura"
+    ],
+    "summary": "Machine Speech Chain, simulating the human perception-production loop, proves\neffective in jointly improving ASR and TTS. We propose TokenChain, a fully\ndiscrete speech chain coupling semantic-token ASR with a two-stage TTS: an\nautoregressive text-to-semantic model co-trained with ASR and a\nmasked-generative semantic-to-acoustic model for synthesis only. End-to-end\nfeedback across the text interface is enabled with straight-through\nargmax/Gumbel-Softmax and balanced with supervised ASR via dynamic weight\naveraging. Ablations examine optimal temperature schedules for in- and\ncross-domain transfer. Evaluation reveals TokenChain surpasses baseline\naccuracy 2-6 epochs earlier and yields 5-13% lower equal-epoch error with\nstable T2S on LibriSpeech, and reduces relative ASR WER by 56% and T2S WER by\n31% on TED-LIUM with minimal forgetting, showing that chain learning remains\neffective with token interfaces and models.",
+    "published": "2025-10-07T17:54:12Z",
+    "updated": "2025-10-07T17:54:12Z",
+    "id": "http://arxiv.org/abs/2510.06201v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06201v1",
+    "categories": [
+      "eess.AS",
+      "cs.AI",
+      "cs.CL",
+      "cs.SD"
+    ],
+    "primary_category": "eess.AS"
+  },
+  {
+    "title": "DYMO-Hair: Generalizable Volumetric Dynamics Modeling for Robot Hair\n  Manipulation",
+    "authors": [
+      "Chengyang Zhao",
+      "Uksang Yoo",
+      "Arkadeep Narayan Chaudhury",
+      "Giljoo Nam",
+      "Jonathan Francis",
+      "Jeffrey Ichnowski",
+      "Jean Oh"
+    ],
+    "summary": "Hair care is an essential daily activity, yet it remains inaccessible to\nindividuals with limited mobility and challenging for autonomous robot systems\ndue to the fine-grained physical structure and complex dynamics of hair. In\nthis work, we present DYMO-Hair, a model-based robot hair care system. We\nintroduce a novel dynamics learning paradigm that is suited for volumetric\nquantities such as hair, relying on an action-conditioned latent state editing\nmechanism, coupled with a compact 3D latent space of diverse hairstyles to\nimprove generalizability. This latent space is pre-trained at scale using a\nnovel hair physics simulator, enabling generalization across previously unseen\nhairstyles. Using the dynamics model with a Model Predictive Path Integral\n(MPPI) planner, DYMO-Hair is able to perform visual goal-conditioned hair\nstyling. Experiments in simulation demonstrate that DYMO-Hair's dynamics model\noutperforms baselines on capturing local deformation for diverse, unseen\nhairstyles. DYMO-Hair further outperforms baselines in closed-loop hair styling\ntasks on unseen hairstyles, with an average of 22% lower final geometric error\nand 42% higher success rate than the state-of-the-art system. Real-world\nexperiments exhibit zero-shot transferability of our system to wigs, achieving\nconsistent success on challenging unseen hairstyles where the state-of-the-art\nsystem fails. Together, these results introduce a foundation for model-based\nrobot hair care, advancing toward more generalizable, flexible, and accessible\nrobot hair styling in unconstrained physical environments. More details are\navailable on our project page: https://chengyzhao.github.io/DYMOHair-web/.",
+    "published": "2025-10-07T17:53:56Z",
+    "updated": "2025-10-07T17:53:56Z",
+    "id": "http://arxiv.org/abs/2510.06199v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06199v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "title": "StarEmbed: Benchmarking Time Series Foundation Models on Astronomical\n  Observations of Variable Stars",
+    "authors": [
+      "Weijian Li",
+      "Hong-Yu Chen",
+      "Qinjie Lin",
+      "Nabeel Rehemtulla",
+      "Ved G. Shah",
+      "Dennis Wu",
+      "Adam A. Miller",
+      "Han Liu"
+    ],
+    "summary": "Time series foundation models (TSFMs) are increasingly being adopted as\nhighly-capable general-purpose time series representation learners. Although\ntheir training corpora are vast, they exclude astronomical time series data.\nObservations of stars produce peta-scale time series with unique challenges\nincluding irregular sampling and heteroskedasticity. We introduce StarEmbed,\nthe first public benchmark for rigorous and standardized evaluation of\nstate-of-the-art TSFMs on stellar time series observations (``light curves'').\nWe benchmark on three scientifically-motivated downstream tasks: unsupervised\nclustering, supervised classification, and out-of-distribution source\ndetection. StarEmbed integrates a catalog of expert-vetted labels with\nmulti-variate light curves from the Zwicky Transient Facility, yielding ~40k\nhand-labeled light curves spread across seven astrophysical classes. We\nevaluate the zero-shot representation capabilities of three TSFMs (MOIRAI,\nChronos, Chronos-Bolt) and a domain-specific transformer (Astromer) against\nhandcrafted feature extraction, the long-standing baseline in the astrophysics\nliterature. Our results demonstrate that these TSFMs, especially the Chronos\nmodels, which are trained on data completely unlike the astronomical\nobservations, can outperform established astrophysics-specific baselines in\nsome tasks and effectively generalize to entirely new data. In particular,\nTSFMs deliver state-of-the-art performance on our out-of-distribution source\ndetection benchmark. With the first benchmark of TSFMs on astronomical time\nseries data, we test the limits of their generalization and motivate a paradigm\nshift in time-domain astronomy from using task-specific, fully supervised\npipelines toward adopting generic foundation model representations for the\nanalysis of peta-scale datasets from forthcoming observatories.",
+    "published": "2025-10-07T17:53:56Z",
+    "updated": "2025-10-07T17:53:56Z",
+    "id": "http://arxiv.org/abs/2510.06200v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06200v1",
+    "categories": [
+      "astro-ph.SR",
+      "astro-ph.IM",
+      "cs.AI"
+    ],
+    "primary_category": "astro-ph.SR"
+  },
+  {
+    "title": "Peeking inside the Black-Box: Reinforcement Learning for Explainable and\n  Accurate Relation Extraction",
+    "authors": [
+      "Xinyu Guo",
+      "Zhengliang Shi",
+      "Minglai Yang",
+      "Mahdi Rahimi",
+      "Mihai Surdeanu"
+    ],
+    "summary": "This paper introduces a framework for relation extraction (RE) that enhances\nboth accuracy and explainability. The framework has two key components: (i) a\nreasoning mechanism that formulates relation extraction as a series of\ntext-processing steps inspired by cognitive science, and (ii) an optimization\nprocess driven by reinforcement learning (RL) with a novel reward function\ndesigned to improve both task accuracy and explanation quality. We call our\napproach CogRE. Our framework addresses the lack of supervision for\nlanguage-based explanations in traditional RE by promoting outputs that include\nimportant relation keywords. These keywords are drawn from a high-quality\ndictionary that is automatically constructed using an LLM. We evaluate our\napproach for the task of one-shot RE using two LLMs and two RE datasets. Our\nexperiments show that CogRE improves explanation quality by addressing two\ncommon failure patterns in one-shot RE: poor attention focus and limited\none-shot learning capability. For example, our cognitive-structured reasoning\nwith Qwen2.5-15B-Instruct on One-shot NYT29 achieves 24.65% F1, surpassing\nprior reasoning-based designs. Optimizing this approach with RL using our\nreward further improves performance by +23.46% (absolute). Finally, human\nevaluation shows that our best model generates relational keywords closely\naligned with gold labels, increasing human explanation quality ratings by 54%\n(relative).",
+    "published": "2025-10-07T17:53:55Z",
+    "updated": "2025-10-07T17:53:55Z",
+    "id": "http://arxiv.org/abs/2510.06198v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06198v1",
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Latent Speech-Text Transformer",
+    "authors": [
+      "Yen-Ju Lu",
+      "Yashesh Gaur",
+      "Wei Zhou",
+      "Benjamin Muller",
+      "Jesus Villalba",
+      "Najim Dehak",
+      "Luke Zettlemoyer",
+      "Gargi Ghosh",
+      "Mike Lewis",
+      "Srinivasan Iyer",
+      "Duc Le"
+    ],
+    "summary": "Auto-regressive speech-text models are typically pre-trained on a large\nnumber of interleaved sequences of text tokens and raw speech encoded as speech\ntokens using vector quantization. These models have demonstrated\nstate-of-the-art performance in speech-to-speech understanding and generation\nbenchmarks, together with promising scaling laws, primarily enabled by the\nrepresentational alignment between text and speech. Nevertheless, they suffer\nfrom shortcomings, partly owing to the disproportionately longer sequences of\nspeech tokens in contrast to textual tokens. This results in a large compute\nimbalance between modalities during pre-training as well as during inference,\nand a potential hindrance to effectively aligning speech and text, ultimately\ntranslating to several orders of magnitude slower scaling laws. We introduce\nthe Latent Speech-Text Transformer (LST), which makes pre-training speech-text\nmodels more data-efficient by dynamically and inexpensively aggregating speech\ntokens into latent speech patches. These patches serve as higher-level units\nthat can either align with corresponding textual units to aid capability\ntransfer or even encapsulate common speech sequences like silences to be more\ncompute-efficient. We show that LST outperforms vanilla approaches on\nspeech-to-speech as well as text-to-text benchmarks in both data- and\ncompute-controlled settings, the former indicating more effective\nrepresentational alignment and the latter indicating steeper scaling laws for\nspeech-text models. On HellaSwag story completion, LST achieves 6.5% absolute\ngain in speech accuracy under compute-controlled training and 5.3% under\ndata-controlled training, while also improving text performance. We will\nrelease our models, code, and the evaluation data to facilitate further\nresearch.",
+    "published": "2025-10-07T17:52:08Z",
+    "updated": "2025-10-07T17:52:08Z",
+    "id": "http://arxiv.org/abs/2510.06195v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06195v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "eess.AS"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Rare Transients in Nearby Galaxies Explain Ultra-high-energy Cosmic Rays",
+    "authors": [
+      "Imre Bartos",
+      "Marek Kowalski"
+    ],
+    "summary": "The origin of ultra-high-energy cosmic rays remains one of the central open\nquestions in astroparticle physics. Recent measurements reveal anisotropies in\narrival directions, a rigidity-dependent composition dominated by\nintermediate-mass nuclei, and striking hemispheric differences in the energy\nspectra. Here we show that rare transients in nearby galaxies can naturally\naccount for these features. In our fiducial neutron-star merger model, the\ncosmic ray flux above $25$ EeV is dominated by ten nearby galaxies within\n$8\\,$Mpc. This accounts for the observed hotspots: seven of the ten brightest\ngalaxies coincide with reported excess regions, a chance probability of\n$p\\simeq0.003$. Nearby transients also explain the spectral excess of TA over\nAuger; link their angular sizes to extragalactic magnetic fields at $\\sim$1 nG;\nexplain the dominance of individual species over narrow energy ranges; and the\nrigidity-aligned succession of isotopes.",
+    "published": "2025-10-07T17:51:47Z",
+    "updated": "2025-10-07T17:51:47Z",
+    "id": "http://arxiv.org/abs/2510.06193v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06193v1",
+    "categories": [
+      "astro-ph.HE"
+    ],
+    "primary_category": "astro-ph.HE"
+  },
+  {
+    "title": "Rapid calibration of atrial electrophysiology models using Gaussian\n  process emulators in the ensemble Kalman filter",
+    "authors": [
+      "Mariya Mamajiwala",
+      "Cesare Corrado",
+      "Chris Lanyon",
+      "Steven A. Niederer",
+      "Richard D. Wilkinson",
+      "Richard H. Clayton"
+    ],
+    "summary": "Atrial fibrillation (AF) is a common cardiac arrhythmia characterised by\ndisordered electrical activity in the atria. The standard treatment is catheter\nablation, which is invasive and irreversible. Recent advances in computational\nelectrophysiology offer the potential for patient-specific models, often\nreferred to as digital twins, that can be used to guide clinical decisions. To\nbe of practical value, we must be able to rapidly calibrate physics-based\nmodels using routine clinical measurements. We pose this calibration task as a\nstatic inverse problem, where the goal is to infer tissue-level\nelectrophysiological parameters from the available observations. To make this\ntractable, we replace the expensive forward model with Gaussian process\nemulators (GPEs), and propose a novel adaptation of the ensemble Kalman filter\n(EnKF) for static non-linear inverse problems. The approach yields parameter\nsamples that can be interpreted as coming from the best Gaussian approximation\nof the posterior distribution. We compare our results with those obtained using\nMarkov chain Monte Carlo (MCMC) sampling and demonstrate the potential of the\napproach to enable near-real-time patient-specific calibration, a key step\ntowards predicting outcomes of AF treatment within clinical timescales. The\napproach is readily applicable to a wide range of static inverse problems in\nscience and engineering.",
+    "published": "2025-10-07T17:50:21Z",
+    "updated": "2025-10-07T17:50:21Z",
+    "id": "http://arxiv.org/abs/2510.06191v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06191v1",
+    "categories": [
+      "stat.AP"
+    ],
+    "primary_category": "stat.AP"
+  },
+  {
+    "title": "On Powerful Ways to Generate: Autoregression, Diffusion, and Beyond",
+    "authors": [
+      "Chenxiao Yang",
+      "Cai Zhou",
+      "David Wipf",
+      "Zhiyuan Li"
+    ],
+    "summary": "This paper formally studies generation processes, including auto-regressive\nnext-token prediction and masked diffusion, that abstract beyond architectural\nspecifics. At this level of abstraction, we quantify their benefits and\nlimitations through measurable criteria such as computational hardness and\nlearnability. In particular, we demonstrate that allowing generation to proceed\nbeyond autoregression and current masked diffusion, with capabilities to\nrewrite and length-variable edit, can bring significant theoretical and\nempirical advantages, with important implications for frontier LLMs that aspire\nto tackle increasingly hard problems and work universally across domains beyond\nnatural language, such as coding and science.",
+    "published": "2025-10-07T17:49:30Z",
+    "updated": "2025-10-07T17:49:30Z",
+    "id": "http://arxiv.org/abs/2510.06190v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06190v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "BanglaTalk: Towards Real-Time Speech Assistance for Bengali Regional\n  Dialects",
+    "authors": [
+      "Jakir Hasan",
+      "Shubhashis Roy Dipta"
+    ],
+    "summary": "Real-time speech assistants are becoming increasingly popular for ensuring\nimproved accessibility to information. Bengali, being a low-resource language\nwith a high regional dialectal diversity, has seen limited progress in\ndeveloping such systems. Existing systems are not optimized for real-time use\nand focus only on standard Bengali. In this work, we present BanglaTalk, the\nfirst real-time speech assistance system for Bengali regional dialects.\nBanglaTalk follows the client-server architecture and uses the Real-time\nTransport Protocol (RTP) to ensure low-latency communication. To address\ndialectal variation, we introduce a dialect-aware ASR system, BRDialect,\ndeveloped by fine-tuning the IndicWav2Vec model in ten Bengali regional\ndialects. It outperforms the baseline ASR models by 12.41-33.98% on the\nRegSpeech12 dataset. Furthermore, BanglaTalk can operate at a low bandwidth of\n24 kbps while maintaining an average end-to-end delay of 4.9 seconds. Low\nbandwidth usage and minimal end-to-end delay make the system both\ncost-effective and interactive for real-time use cases, enabling inclusive and\naccessible speech technology for the diverse community of Bengali speakers.",
+    "published": "2025-10-07T17:47:39Z",
+    "updated": "2025-10-07T17:47:39Z",
+    "id": "http://arxiv.org/abs/2510.06188v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06188v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Dropping the D: RGB-D SLAM Without the Depth Sensor",
+    "authors": [
+      "Mert Kiray",
+      "Alican Karaomer",
+      "Benjamin Busam"
+    ],
+    "summary": "We present DropD-SLAM, a real-time monocular SLAM system that achieves\nRGB-D-level accuracy without relying on depth sensors. The system replaces\nactive depth input with three pretrained vision modules: a monocular metric\ndepth estimator, a learned keypoint detector, and an instance segmentation\nnetwork. Dynamic objects are suppressed using dilated instance masks, while\nstatic keypoints are assigned predicted depth values and backprojected into 3D\nto form metrically scaled features. These are processed by an unmodified RGB-D\nSLAM back end for tracking and mapping. On the TUM RGB-D benchmark, DropD-SLAM\nattains 7.4 cm mean ATE on static sequences and 1.8 cm on dynamic sequences,\nmatching or surpassing state-of-the-art RGB-D methods while operating at 22 FPS\non a single GPU. These results suggest that modern pretrained vision models can\nreplace active depth sensors as reliable, real-time sources of metric scale,\nmarking a step toward simpler and more cost-effective SLAM systems.",
+    "published": "2025-10-07T17:59:30Z",
+    "updated": "2025-10-07T17:59:30Z",
+    "id": "http://arxiv.org/abs/2510.06216v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06216v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "Tensor time series change-point detection in cryptocurrency network data",
+    "authors": [
+      "Andreas Anastasiou",
+      "Ivor Cribben"
+    ],
+    "summary": "Financial fraud has been growing exponentially in recent years. The rise of\ncryptocurrencies as an investment asset has simultaneously seen a parallel\ngrowth in cryptocurrency scams. To detect possible cryptocurrency fraud, and in\nparticular market manipulation, previous research focused on the detection of\nchanges in the network of trades; however, market manipulators are now trading\nacross multiple cryptocurrency platforms, making their detection more\ndifficult. Hence, it is important to consider the identification of changes\nacross several trading networks or a `network of networks' over time. To this\nend, in this article, we propose a new change-point detection method in the\nnetwork structure of tensor-variate data. This new method, labeled TenSeg,\nfirst employs a tensor decomposition, and second detects multiple change-points\nin the second-order (cross-covariance or network) structure of the decomposed\ndata. It allows for change-point detection in the presence of frequent changes\nof possibly small magnitudes and is computationally fast. We apply our method\nto several simulated datasets and to a cryptocurrency dataset, which consists\nof network tensor-variate data from the Ethereum blockchain. We demonstrate\nthat our approach substantially outperforms other state-of-the-art change-point\ntechniques, and the detected change-points in the Ethereum data set coincide\nwith changes across several trading networks or a `network of networks' over\ntime. Finally, all the relevant \\textsf{R} code implementing the method in the\narticle are available on https://github.com/Anastasiou-Andreas/TenSeg.",
+    "published": "2025-10-07T17:58:37Z",
+    "updated": "2025-10-07T17:58:37Z",
+    "id": "http://arxiv.org/abs/2510.06211v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06211v1",
+    "categories": [
+      "stat.ME",
+      "stat.AP"
+    ],
+    "primary_category": "stat.ME"
+  },
+  {
+    "title": "Multi-Segment Photonic Power Converters for Energy Harvesting and\n  High-Speed Optical Wireless Communication",
+    "authors": [
+      "Othman Younus",
+      "Behnaz Majlesein",
+      "Richard Nacke",
+      "Isaac N. O. Osahon",
+      "Carmine Pellegrino",
+      "Sina Babadi",
+      "Iman Tavakkolnia",
+      "Henning Helmers",
+      "Harald Haas"
+    ],
+    "summary": "The demand for energy-efficient high-speed wireless communication, coupled\nwith the rapid rise of IoT devices, requires systems that integrate power\nharvesting with optical data reception to eliminate the need for charging or\nbattery replacements. Recent advances have explored the use of solar cells as\noptical receivers for high-speed data detection alongside power harvesting.\n\\acs{GaAs}-based \\acp{PPC} provide six times greater electron mobility than\nsilicon- or cadmium telluride-based cells, enabling faster data detection and\nimproved power efficiency. However, their bandwidth is constrained by junction\ncapacitance, which increases with active area, creating a trade-off between\npower output and data rate. To address this, we propose and test multi-segment\n\\acs{GaAs}-based \\Acp{PPC} that serve as both energy harvesters and data\ndetectors. By segmenting the active area into 2, 4, or 6 subcells, forming\ncircular areas with diameters of 1, 1.5, or 2.08~mm, we reduce capacitance and\nboost bandwidth while preserving light collection. Fabricated on a\nsemi-insulating \\ac{GaAs} substrate with etched trenches for electrical\nisolation, the series-connected subcells optimize absorption and minimize\nparasitic effects. The \\Acp{PPC} were used for an eye-safe 1.5~m optical\nwireless link, employing \\ac{OFDM} with adaptive bit and power loading. The\nsystem achieved a world record data rate of 3.8~Gbps, which is four times\nhigher than prior works. The system converts 39.7\\% of optical power from a\nbeam of 2.3~mW, although the segmentation increases the sensitivity of the\nalignment. These findings provide new solutions for off-grid backhaul for\nfuture communication networks, such as 6th generation (6G) cellular.",
+    "published": "2025-10-07T17:56:35Z",
+    "updated": "2025-10-07T17:56:35Z",
+    "id": "http://arxiv.org/abs/2510.06205v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06205v1",
+    "categories": [
+      "eess.SY",
+      "cs.SY",
+      "eess.SP"
+    ],
+    "primary_category": "eess.SY"
+  },
+  {
+    "title": "Modulation Discovery with Differentiable Digital Signal Processing",
+    "authors": [
+      "Christopher Mitcheltree",
+      "Hao Hao Tan",
+      "Joshua D. Reiss"
+    ],
+    "summary": "Modulations are a critical part of sound design and music production,\nenabling the creation of complex and evolving audio. Modern synthesizers\nprovide envelopes, low frequency oscillators (LFOs), and more parameter\nautomation tools that allow users to modulate the output with ease. However,\ndetermining the modulation signals used to create a sound is difficult, and\nexisting sound-matching / parameter estimation systems are often\nuninterpretable black boxes or predict high-dimensional framewise parameter\nvalues without considering the shape, structure, and routing of the underlying\nmodulation curves. We propose a neural sound-matching approach that leverages\nmodulation extraction, constrained control signal parameterizations, and\ndifferentiable digital signal processing (DDSP) to discover the modulations\npresent in a sound. We demonstrate the effectiveness of our approach on highly\nmodulated synthetic and real audio samples, its applicability to different DDSP\nsynth architectures, and investigate the trade-off it incurs between\ninterpretability and sound-matching accuracy. We make our code and audio\nsamples available and provide the trained DDSP synths in a VST plugin.",
+    "published": "2025-10-07T17:56:24Z",
+    "updated": "2025-10-07T17:56:24Z",
+    "id": "http://arxiv.org/abs/2510.06204v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06204v1",
+    "categories": [
+      "cs.SD",
+      "cs.LG",
+      "eess.AS"
+    ],
+    "primary_category": "cs.SD"
+  },
+  {
+    "title": "Mapping surface height dynamics to subsurface flow physics in\n  free-surface turbulent flow using a shallow recurrent decoder",
+    "authors": [
+      "Kristoffer S. Moen",
+      "J\u00f8rgen R. Aarnes",
+      "Simen \u00c5. Ellingsen",
+      "J. Nathan Kutz"
+    ],
+    "summary": "Near-surface turbulent flows beneath a free surface are reconstructed from\nsparse measurements of the surface height variation, by a novel neural network\nalgorithm known as the SHallow REcurrent Decoder (SHRED). The reconstruction of\nturbulent flow fields from limited, partial, or indirect measurements remains a\ngrand challenge in science and engineering. The central goal in such\napplications is to leverage easy-to-measure proxy variables in order to\nestimate quantities which have not been, and perhaps cannot in practice be,\nmeasured. Specifically, in the application considered here, the aim is to use a\nsparse number of surface height point measurements of a flow field, or drone\nvideo footage of surface features, in order to infer the turbulent flow field\nbeneath the surface. SHRED is a deep learning architecture that learns a\ndelay-coordinate embedding from a few surface height (point) sensors and maps\nit, via a shallow decoder trained in a compressed basis, to full subsurface\nfields, enabling fast, robust training from minimal data. We demonstrate the\nSHRED sensing architecture on both fully resolved DNS data and PIV laboratory\ndata from a turbulent water tank. SHRED is capable of robustly mapping surface\nheight fluctuations to full-state flow fields up to about two integral length\nscales deep, with as few as three surface measurements.",
+    "published": "2025-10-07T17:54:14Z",
+    "updated": "2025-10-07T17:54:14Z",
+    "id": "http://arxiv.org/abs/2510.06202v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06202v1",
+    "categories": [
+      "physics.flu-dyn"
+    ],
+    "primary_category": "physics.flu-dyn"
+  },
+  {
+    "title": "Conformalized Gaussian processes for online uncertainty quantification\n  over graphs",
+    "authors": [
+      "Jinwen Xu",
+      "Qin Lu",
+      "Georgios B. Giannakis"
+    ],
+    "summary": "Uncertainty quantification (UQ) over graphs arises in a number of\nsafety-critical applications in network science. The Gaussian process (GP), as\na classical Bayesian framework for UQ, has been developed to handle\ngraph-structured data by devising topology-aware kernel functions. However,\nsuch GP-based approaches are limited not only by the prohibitive computational\ncomplexity, but also the strict modeling assumptions that might yield poor\ncoverage, especially with labels arriving on the fly. To effect scalability, we\ndevise a novel graph-aware parametric GP model by leveraging the random feature\n(RF)-based kernel approximation, which is amenable to efficient recursive\nBayesian model updates. To further allow for adaptivity, an ensemble of\ngraph-aware RF-based scalable GPs have been leveraged, with per-GP weight\nadapted to data arriving incrementally. To ensure valid coverage with\nrobustness to model mis-specification, we wed the GP-based set predictors with\nthe online conformal prediction framework, which post-processes the prediction\nsets using adaptive thresholds. Experimental results the proposed method yields\nimproved coverage and efficient prediction sets over existing baselines by\nadaptively ensembling the GP models and setting the key threshold parameters in\nCP.",
+    "published": "2025-10-07T17:44:13Z",
+    "updated": "2025-10-07T17:44:13Z",
+    "id": "http://arxiv.org/abs/2510.06181v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06181v1",
+    "categories": [
+      "cs.LG",
+      "eess.SP",
+      "stat.ML"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "An integrated photonic millimeter-wave receiver with sub-ambient noise",
+    "authors": [
+      "Junyin Zhang",
+      "Shuhang Zheng",
+      "Jiachen Cai",
+      "Connor Denney",
+      "Zihan Li",
+      "Yichi Zhang",
+      "Xin Ou",
+      "Gabriel Santamaria-Botello",
+      "Tobias J. Kippenberg"
+    ],
+    "summary": "Decades of progress in radiofrequency (RF) transistors and receiver frontends\nhave profoundly impacted wireless communications, remote sensing, navigation,\nand instrumentation. Growing demands for data throughput in 6G networks, timing\nprecision in positioning systems, and resolution in atmospheric sensing and\nautomotive radar have pushed receiver frontends into the millimeter-wave (mmW)\nand sub-mmW/THz regimes. At these frequencies, however, the noise performance\nof field-effect transistors (FETs) degrades rapidly due to parasitic effects,\nlimited carrier mobility, hot electrons, and shot noise. Parametric transducers\nthat couple electromagnetic signals to optical fields offer quantum-limited\nsensitivity at room temperature. Electro-optic materials enable receivers that\nconvert RF signals into optical phase shifts. While early demonstrations used\nresonant devices and recent efforts have focused on cryogenic\nmicrowave-to-optical quantum transduction, room-temperature electro-optic\nreceivers have yet to achieve noise figures comparable to their electronic\ncounterparts. Here we demonstrate a room-temperature integrated cavity\nelectro-optic mmW receiver on a lithium tantalate (LiTaO3) photonic integrated\ncircuit with 2.5% on-chip photon-number transduction efficiency, achieving 250\nK noise temperature at 59.33 GHz--matching state-of-the-art LNAs. We report the\nfirst direct resolution of thermal noise in cavity electro-optic transduction,\nshowing the system is fundamentally limited by thermal photon occupation (~100)\nin the mmW cavity. Our work establishes integrated photonics as a path to\nsurpass electronic LNAs while offering exceptional resilience to strong\nelectromagnetic inputs and immunity to EMI, establishing cavity electro-optics\nas a low-noise, chip-scale, EMI-resilient receiver frontend for mmW\napplications and scalable analog processing in the optical domain.",
+    "published": "2025-10-07T17:40:21Z",
+    "updated": "2025-10-07T17:40:21Z",
+    "id": "http://arxiv.org/abs/2510.06176v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06176v1",
+    "categories": [
+      "physics.optics",
+      "quant-ph"
+    ],
+    "primary_category": "physics.optics"
+  },
+  {
+    "title": "Smartphone-based iris recognition through high-quality visible-spectrum\n  iris image capture.V2",
+    "authors": [
+      "Naveenkumar G Venkataswamy",
+      "Yu Liu",
+      "Soumyabrata Dey",
+      "Stephanie Schuckers",
+      "Masudul H Imtiaz"
+    ],
+    "summary": "Smartphone-based iris recognition in the visible spectrum (VIS) remains\ndifficult due to illumination variability, pigmentation differences, and the\nabsence of standardized capture controls. This work presents a compact\nend-to-end pipeline that enforces ISO/IEC 29794-6 quality compliance at\nacquisition and demonstrates that accurate VIS iris recognition is feasible on\ncommodity devices. Using a custom Android application performing real-time\nframing, sharpness evaluation, and feedback, we introduce the CUVIRIS dataset\nof 752 compliant images from 47 subjects. A lightweight MobileNetV3-based\nmulti-task segmentation network (LightIrisNet) is developed for efficient\non-device processing, and a transformer matcher (IrisFormer) is adapted to the\nVIS domain. Under a standardized protocol and comparative benchmarking against\nprior CNN baselines, OSIRIS attains a TAR of 97.9% at FAR=0.01 (EER=0.76%),\nwhile IrisFormer, trained only on UBIRIS.v2, achieves an EER of 0.057% on\nCUVIRIS. The acquisition app, trained models, and a public subset of the\ndataset are released to support reproducibility. These results confirm that\nstandardized capture and VIS-adapted lightweight models enable accurate and\npractical iris recognition on smartphones.",
+    "published": "2025-10-07T17:33:41Z",
+    "updated": "2025-10-07T17:33:41Z",
+    "id": "http://arxiv.org/abs/2510.06170v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06170v1",
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "eess.IV"
+  },
+  {
+    "title": "TabPFN-Wide: Continued Pre-Training for Extreme Feature Counts",
+    "authors": [
+      "Christopher Kolberg",
+      "Katharina Eggensperger",
+      "Nico Pfeifer"
+    ],
+    "summary": "Revealing novel insights from the relationship between molecular measurements\nand pathology remains a very impactful application of machine learning in\nbiomedicine. Data in this domain typically contain only a few observations but\nthousands of potentially noisy features, posing challenges for conventional\nmachine learning approaches. While prior-data fitted networks emerge as\nfoundation models for tabular data, they are currently not suited to handle\nlarge feature counts (>500). Although feature reduction enables their\napplication, it hinders feature importance analysis. We propose a strategy that\nextends existing models through continued pre-training on synthetic data\nsampled from a customized prior. The resulting model, TabPFN-Wide, matches or\nexceeds its base model's performance while exhibiting improved robustness to\nnoise. It seamlessly scales beyond 50,000 features, regardless of noise levels,\nwhile maintaining inherent interpretability, which is critical for biomedical\napplications. Our results show that prior-informed adaptation is suitable to\nenhance the capability of foundation models for high-dimensional data. On\nreal-world biomedical datasets many of the most relevant features identified by\nthe model overlap with previous biological findings, while others propose\npotential starting points for future studies.",
+    "published": "2025-10-07T17:28:49Z",
+    "updated": "2025-10-07T17:28:49Z",
+    "id": "http://arxiv.org/abs/2510.06162v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06162v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "A GNAR-Based Framework for Spectral Estimation of Network Time Series:\n  Application to Global Bank Network Connectedness",
+    "authors": [
+      "Cristian F. Jim\u00e9nez-Var\u00f3n",
+      "Marina I. Knight"
+    ],
+    "summary": "Patterns of dependence in financial networks, such as global bank\nconnectedness, evolve over time and across frequencies. Analysing these systems\nrequires statistical tools that jointly capture temporal dynamics and the\nunderlying network topology. This work develops a novel spectral analysis\nframework for Generalized Network Autoregressive (GNAR) processes, modeling\ndependencies beyond direct neighbours by incorporating r-stage neighbourhood\neffects, unlike existing methods that at best rely solely on adjacency-based\ninteractions. We define the GNAR spectral density and related quantities, such\nas coherence and partial coherence, for which we propose both parametric and\nnetwork-penalized nonparametric estimators. Extensive simulations demonstrate\nthe strong performance of the parametric spectral estimator, as also backed up\nby theoretical arguments. The proposed framework has wide applications, and\nhere we focus on the analysis of global bank network connectedness. The\nfindings illustrate how the GNAR spectral quantities effectively capture the\nfrequency-specific cross-nodal dependencies, thus yielding estimates consistent\nwith established measures, while also uncovering richer temporal and structural\npatterns of volatility transmission.",
+    "published": "2025-10-07T17:23:46Z",
+    "updated": "2025-10-07T17:23:46Z",
+    "id": "http://arxiv.org/abs/2510.06157v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06157v1",
+    "categories": [
+      "stat.ME"
+    ],
+    "primary_category": "stat.ME"
+  },
+  {
+    "title": "Improved High-probability Convergence Guarantees of Decentralized SGD",
+    "authors": [
+      "Aleksandar Armacki",
+      "Ali H. Sayed"
+    ],
+    "summary": "Convergence in high-probability (HP) has been receiving increasing interest,\ndue to its attractive properties, such as exponentially decaying tail bounds\nand strong guarantees for each individual run of an algorithm. While HP\nguarantees are extensively studied in centralized settings, much less is\nunderstood in the decentralized, networked setup. Existing HP studies in\ndecentralized settings impose strong assumptions, like uniformly bounded\ngradients, or asymptotically vanishing noise, resulting in a significant gap\nbetween assumptions used to establish convergence in the HP and the\nmean-squared error (MSE) sense, even for vanilla Decentralized Stochastic\nGradient Descent ($\\mathtt{DSGD}$) algorithm. This is contrary to centralized\nsettings, where it is known that $\\mathtt{SGD}$ converges in HP under the same\nconditions on the cost function as needed to guarantee MSE convergence.\nMotivated by this observation, we revisit HP guarantees for $\\mathtt{DSGD}$ in\nthe presence of light-tailed noise. We show that $\\mathtt{DSGD}$ converges in\nHP under the same conditions on the cost as in the MSE sense, removing\nuniformly bounded gradients and other restrictive assumptions, while\nsimultaneously achieving order-optimal rates for both non-convex and strongly\nconvex costs. Moreover, our improved analysis yields linear speed-up in the\nnumber of users, demonstrating that $\\mathtt{DSGD}$ maintains strong\nperformance in the HP sense and matches existing MSE guarantees. Our improved\nresults stem from a careful analysis of the MGF of quantities of interest\n(norm-squared of gradient or optimality gap) and the MGF of the consensus gap\nbetween users' models. To achieve linear speed-up, we provide a novel result on\nthe variance-reduction effect of decentralized methods in the HP sense and more\nfine-grained bounds on the MGF for strongly convex costs, which are both of\nindependent interest.",
+    "published": "2025-10-07T17:15:08Z",
+    "updated": "2025-10-07T17:15:08Z",
+    "id": "http://arxiv.org/abs/2510.06141v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06141v1",
+    "categories": [
+      "cs.LG",
+      "cs.MA",
+      "math.OC"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Multi-Task Reinforcement Learning with Language-Encoded Gated Policy\n  Networks",
+    "authors": [
+      "Rushiv Arora"
+    ],
+    "summary": "Multi-task reinforcement learning often relies on task metadata -- such as\nbrief natural-language descriptions -- to guide behavior across diverse\nobjectives. We present Lexical Policy Networks (LEXPOL), a language-conditioned\nmixture-of-policies architecture for multi-task RL. LEXPOL encodes task\nmetadata with a text encoder and uses a learned gating module to select or\nblend among multiple sub-policies, enabling end-to-end training across tasks.\nOn MetaWorld benchmarks, LEXPOL matches or exceeds strong multi-task baselines\nin success rate and sample efficiency, without task-specific retraining. To\nanalyze the mechanism, we further study settings with fixed expert policies\nobtained independently of the gate and show that the learned language gate\ncomposes these experts to produce behaviors appropriate to novel task\ndescriptions and unseen task combinations. These results indicate that\nnatural-language metadata can effectively index and recombine reusable skills\nwithin a single policy.",
+    "published": "2025-10-07T17:12:24Z",
+    "updated": "2025-10-07T17:12:24Z",
+    "id": "http://arxiv.org/abs/2510.06138v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06138v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "I.2.6"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Geometric Model Selection for Latent Space Network Models: Hypothesis\n  Testing via Multidimensional Scaling and Resampling Techniques",
+    "authors": [
+      "Jieyun Wang",
+      "Anna L. Smith"
+    ],
+    "summary": "Latent space models assume that network ties are more likely between nodes\nthat are closer together in an underlying latent space. Euclidean space is a\npopular choice for the underlying geometry, but hyperbolic geometry can mimic\nmore realistic patterns of ties in complex networks. To identify the underlying\ngeometry, past research has applied non-Euclidean extensions of\nmultidimensional scaling (MDS) to the observed geodesic distances: the shortest\npath lengths between nodes. The difference in stress, a standard\ngoodness-of-fit metric for MDS, across the geometries is then used to select a\nlatent geometry with superior model fit (lower stress). The effectiveness of\nthis method is assessed through simulations of latent space networks in\nEuclidean and hyperbolic geometries. To better account for uncertainty, we\nextend permutation-based hypothesis tests for MDS to the latent network\nsetting. However, these tests do not incorporate any network structure. We\npropose a parametric bootstrap distribution of networks, conditioned on\nobserved geodesic distances and the Gaussian Latent Position Model (GLPM). Our\nmethod extends the Davidson-MacKinnon J-test to latent space network models\nwith differing latent geometries. We pay particular attention to large and\nsparse networks, and both the permutation test and the bootstrapping methods\nshow an improvement in detecting the underlying geometry.",
+    "published": "2025-10-07T17:10:08Z",
+    "updated": "2025-10-07T17:10:08Z",
+    "id": "http://arxiv.org/abs/2510.06136v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06136v1",
+    "categories": [
+      "stat.ME"
+    ],
+    "primary_category": "stat.ME"
+  },
+  {
+    "title": "Downsized and Compromised?: Assessing the Faithfulness of Model\n  Compression",
+    "authors": [
+      "Moumita Kamal",
+      "Douglas A. Talbert"
+    ],
+    "summary": "In real-world applications, computational constraints often require\ntransforming large models into smaller, more efficient versions through model\ncompression. While these techniques aim to reduce size and computational cost\nwithout sacrificing performance, their evaluations have traditionally focused\non the trade-off between size and accuracy, overlooking the aspect of model\nfaithfulness. This limited view is insufficient for high-stakes domains like\nhealthcare, finance, and criminal justice, where compressed models must remain\nfaithful to the behavior of their original counterparts. This paper presents a\nnovel approach to evaluating faithfulness in compressed models, moving beyond\nstandard metrics. We introduce and demonstrate a set of faithfulness metrics\nthat capture how model behavior changes post-compression. Our contributions\ninclude introducing techniques to assess predictive consistency between the\noriginal and compressed models using model agreement, and applying chi-squared\ntests to detect statistically significant changes in predictive patterns across\nboth the overall dataset and demographic subgroups, thereby exposing shifts\nthat aggregate fairness metrics may obscure. We demonstrate our approaches by\napplying quantization and pruning to artificial neural networks (ANNs) trained\non three diverse and socially meaningful datasets. Our findings show that high\naccuracy does not guarantee faithfulness, and our statistical tests detect\nsubtle yet significant shifts that are missed by standard metrics, such as\nAccuracy and Equalized Odds. The proposed metrics provide a practical and more\ndirect method for ensuring that efficiency gains through compression do not\ncompromise the fairness or faithfulness essential for trustworthy AI.",
+    "published": "2025-10-07T17:05:02Z",
+    "updated": "2025-10-07T17:05:02Z",
+    "id": "http://arxiv.org/abs/2510.06125v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06125v1",
+    "categories": [
+      "cs.LG",
+      "I.2.6"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "PolyGraph Discrepancy: a classifier-based metric for graph generation",
+    "authors": [
+      "Markus Krimmel",
+      "Philip Hartout",
+      "Karsten Borgwardt",
+      "Dexiong Chen"
+    ],
+    "summary": "Existing methods for evaluating graph generative models primarily rely on\nMaximum Mean Discrepancy (MMD) metrics based on graph descriptors. While these\nmetrics can rank generative models, they do not provide an absolute measure of\nperformance. Their values are also highly sensitive to extrinsic parameters,\nnamely kernel and descriptor parametrization, making them incomparable across\ndifferent graph descriptors. We introduce PolyGraph Discrepancy (PGD), a new\nevaluation framework that addresses these limitations. It approximates the\nJensen-Shannon distance of graph distributions by fitting binary classifiers to\ndistinguish between real and generated graphs, featurized by these descriptors.\nThe data log-likelihood of these classifiers approximates a variational lower\nbound on the JS distance between the two distributions. Resulting metrics are\nconstrained to the unit interval [0,1] and are comparable across different\ngraph descriptors. We further derive a theoretically grounded summary metric\nthat combines these individual metrics to provide a maximally tight lower bound\non the distance for the given descriptors. Thorough experiments demonstrate\nthat PGD provides a more robust and insightful evaluation compared to MMD\nmetrics. The PolyGraph framework for benchmarking graph generative models is\nmade publicly available at https://github.com/BorgwardtLab/polygraph-benchmark.",
+    "published": "2025-10-07T17:02:44Z",
+    "updated": "2025-10-07T17:02:44Z",
+    "id": "http://arxiv.org/abs/2510.06122v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06122v1",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Deep Learning Reconstruction of Tropical Cyclogenesis in the Western\n  North Pacific from Climate Reanalysis Dataset",
+    "authors": [
+      "Duc-Trong Le",
+      "Tran-Binh Dang",
+      "Anh-Duc Hoang Gia",
+      "Duc-Hai Nguyen",
+      "Minh-Hoa Tien",
+      "Xuan-Truong Ngo",
+      "Quang-Trung Luu",
+      "Quang-Lap Luu",
+      "Tai-Hung Nguyen",
+      "Thanh T. N. Nguyen",
+      "Chanh Kieu"
+    ],
+    "summary": "This study presents a deep learning (DL) architecture based on residual\nconvolutional neural networks (ResNet) to reconstruct the climatology of\ntropical cyclogenesis (TCG) in the Western North Pacific (WNP) basin from\nclimate reanalysis datasets. Using different TCG data labeling strategies and\ndata enrichment windows for the NASA Modern-Era Retrospective analysis for\nResearch and Applications Version 2 (MERRA2) dataset during the 1980-2020\nperiod, we demonstrate that ResNet can reasonably reproduce the overall TCG\nclimatology in the WNP, capturing both its seasonality and spatial\ndistribution. Our sensitivity analyses and optimizations show that this TCG\nreconstruction depends on both the type of TCG climatology that one wishes to\nreconstruct and the strategies used to label TCG data. Of interest, analyses of\ndifferent input features reveal that DL-based reconstruction of TCG climatology\nneeds only a subset of channels rather than all available data, which is\nconsistent with previous modeling and observational studies of TCG. These\nresults not only enhance our understanding of the TCG process but also provide\na promising pathway for predicting or downscaling TCG climatology based on\nlarge-scale environments from global model forecasts or climate output.\nOverall, our study demonstrates that DL can offer an effective approach for\nstudying TC climatology beyond the traditional physical-based simulations and\nvortex-tracking algorithms used in current climate model analyses.",
+    "published": "2025-10-07T16:54:39Z",
+    "updated": "2025-10-07T16:54:39Z",
+    "id": "http://arxiv.org/abs/2510.06118v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06118v1",
+    "categories": [
+      "physics.ao-ph"
+    ],
+    "primary_category": "physics.ao-ph"
+  },
+  {
+    "title": "The Physics of Data and Tasks: Theories of Locality and Compositionality\n  in Deep Learning",
+    "authors": [
+      "Alessandro Favero"
+    ],
+    "summary": "Deep neural networks have achieved remarkable success, yet our understanding\nof how they learn remains limited. These models can learn high-dimensional\ntasks, which is generally statistically intractable due to the curse of\ndimensionality. This apparent paradox suggests that learnable data must have an\nunderlying latent structure. What is the nature of this structure? How do\nneural networks encode and exploit it, and how does it quantitatively impact\nperformance - for instance, how does generalization improve with the number of\ntraining examples? This thesis addresses these questions by studying the roles\nof locality and compositionality in data, tasks, and deep learning\nrepresentations.",
+    "published": "2025-10-07T16:40:06Z",
+    "updated": "2025-10-07T16:40:06Z",
+    "id": "http://arxiv.org/abs/2510.06106v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06106v1",
+    "categories": [
+      "cs.LG",
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "stat.ML"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "A Finer View of the Parameterized Landscape of Labeled Graph\n  Contractions",
+    "authors": [
+      "Yashaswini Mathur",
+      "Prafullkumar Tale"
+    ],
+    "summary": "We study the \\textsc{Labeled Contractibility} problem, where the input\nconsists of two vertex-labeled graphs $G$ and $H$, and the goal is to determine\nwhether $H$ can be obtained from $G$ via a sequence of edge contractions.\n  Lafond and Marchand~[WADS 2025] initiated the parameterized complexity study\nof this problem, showing it to be \\(\\W[1]\\)-hard when parameterized by the\nnumber \\(k\\) of allowed contractions. They also proved that the problem is\nfixed-parameter tractable when parameterized by the tree-width \\(\\tw\\) of\n\\(G\\), via an application of Courcelle's theorem resulting in a\nnon-constructive algorithm.\n  In this work, we present a constructive fixed-parameter algorithm for\n\\textsc{Labeled Contractibility} with running time \\(2^{\\mathcal{O}(\\tw^2)}\n\\cdot |V(G)|^{\\mathcal{O}(1)}\\). We also prove that unless the Exponential Time\nHypothesis (\\ETH) fails, it does not admit an algorithm running in time\n\\(2^{o(\\tw^2)} \\cdot |V(G)|^{\\mathcal{O}(1)}\\). This result adds\n\\textsc{Labeled Contractibility} to a small list of problems that admit such a\nlower bound and matching algorithm.\n  We further strengthen existing hardness results by showing that the problem\nremains \\NP-complete even when both input graphs have bounded maximum degree.\nWe also investigate parameterizations by \\((k + \\delta(G))\\) where\n\\(\\delta(G)\\) denotes the degeneracy of \\(G\\), and rule out the existence of\nsubexponential-time algorithms. This answers question raised in Lafond and\nMarchand~[WADS 2025]. We additionally provide an improved \\FPT\\ algorithm with\nbetter dependence on \\((k + \\delta(G))\\) than previously known. Finally, we\nanalyze a brute-force algorithm for \\textsc{Labeled Contractibility} with\nrunning time \\(|V(H)|^{\\mathcal{O}(|V(G)|)}\\), and show that this running time\nis optimal under \\ETH.",
+    "published": "2025-10-07T16:33:44Z",
+    "updated": "2025-10-07T16:33:44Z",
+    "id": "http://arxiv.org/abs/2510.06102v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06102v1",
+    "categories": [
+      "cs.DS",
+      "cs.DM"
+    ],
+    "primary_category": "cs.DS"
+  },
+  {
+    "title": "Quantum Strategies to Overcome Classical Multiplexing Limits",
+    "authors": [
+      "Tzula B. Propp",
+      "Bethany Davies",
+      "Jeroen Grimbergen",
+      "Emil R. Hellebek",
+      "Junior R. Gonzales-Ureta",
+      "Janice van Dam",
+      "Joshua A. Slater",
+      "Anders S. S\u00f8rensen",
+      "Stephanie D. C. Wehner"
+    ],
+    "summary": "Near-term quantum networks face a bottleneck due to low quantum communication\nrates. This degrades performance both by lowering operating speeds and\nincreasing qubit storage time in noisy memories, making some quantum internet\napplications infeasible. One way to circumvent this bottleneck is multiplexing:\ncombining multiple signals into a single signal to improve the overall rate.\nStandard multiplexing techniques are classical in that they do not make use of\ncoherence between quantum channels nor account for decoherence rates that vary\nduring a protocol's execution. In this paper, we first derive semiclassical\nlimits to multiplexing for many-qubit protocols, and then introduce new\ntechniques: quantum multiplexing and multi-server multiplexing. These can\nenable beyond-classical multiplexing advantages. We illustrate these techniques\nthrough three example applications: 1) entanglement generation between two\nasymetric quantum network nodes (i.e., repeaters or quantum servers with\ninequal memories), 2) remote state preparation between many end user devices\nand a single quantum node, and 3) remote state preparation between one end user\ndevice and many internetworked quantum nodes. By utilizing many noisy\ninternetworked quantum devices instead of fewer low-noise devices, our\nmultiplexing strategies enable new paths towards achieving high-speed\nmany-qubit quantum network applications.",
+    "published": "2025-10-07T16:30:27Z",
+    "updated": "2025-10-07T16:30:27Z",
+    "id": "http://arxiv.org/abs/2510.06099v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06099v1",
+    "categories": [
+      "quant-ph"
+    ],
+    "primary_category": "quant-ph"
+  },
+  {
+    "title": "Learning Mixtures of Linear Dynamical Systems (MoLDS) via Hybrid\n  Tensor-EM Method",
+    "authors": [
+      "Lulu Gong",
+      "Shreya Saxena"
+    ],
+    "summary": "Mixtures of linear dynamical systems (MoLDS) provide a path to model\ntime-series data that exhibit diverse temporal dynamics across trajectories.\nHowever, its application remains challenging in complex and noisy settings,\nlimiting its effectiveness for neural data analysis. Tensor-based moment\nmethods can provide global identifiability guarantees for MoLDS, but their\nperformance degrades under noise and complexity. Commonly used\nexpectation-maximization (EM) methods offer flexibility in fitting latent\nmodels but are highly sensitive to initialization and prone to poor local\nminima. Here, we propose a tensor-based method that provides identifiability\nguarantees for learning MoLDS, which is followed by EM updates to combine the\nstrengths of both approaches. The novelty in our approach lies in the\nconstruction of moment tensors using the input-output data to recover globally\nconsistent estimates of mixture weights and system parameters. These estimates\ncan then be refined through a Kalman EM algorithm, with closed-form updates for\nall LDS parameters. We validate our framework on synthetic benchmarks and\nreal-world datasets. On synthetic data, the proposed Tensor-EM method achieves\nmore reliable recovery and improved robustness compared to either pure tensor\nor randomly initialized EM methods. We then analyze neural recordings from the\nprimate somatosensory cortex while a non-human primate performs reaches in\ndifferent directions. Our method successfully models and clusters different\nconditions as separate subsystems, consistent with supervised single-LDS fits\nfor each condition. Finally, we apply this approach to another neural dataset\nwhere monkeys perform a sequential reaching task. These results demonstrate\nthat MoLDS provides an effective framework for modeling complex neural data,\nand that Tensor-EM is a reliable approach to MoLDS learning for these\napplications.",
+    "published": "2025-10-07T16:17:52Z",
+    "updated": "2025-10-07T16:17:52Z",
+    "id": "http://arxiv.org/abs/2510.06091v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06091v1",
+    "categories": [
+      "cs.LG",
+      "cs.SY",
+      "eess.SY",
+      "q-bio.NC",
+      "stat.ML"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Human3R: Everyone Everywhere All at Once",
+    "authors": [
+      "Yue Chen",
+      "Xingyu Chen",
+      "Yuxuan Xue",
+      "Anpei Chen",
+      "Yuliang Xiu",
+      "Gerard Pons-Moll"
+    ],
+    "summary": "We present Human3R, a unified, feed-forward framework for online 4D\nhuman-scene reconstruction, in the world frame, from casually captured\nmonocular videos. Unlike previous approaches that rely on multi-stage\npipelines, iterative contact-aware refinement between humans and scenes, and\nheavy dependencies, e.g., human detection, depth estimation, and SLAM\npre-processing, Human3R jointly recovers global multi-person SMPL-X bodies\n(\"everyone\"), dense 3D scene (\"everywhere\"), and camera trajectories in a\nsingle forward pass (\"all-at-once\"). Our method builds upon the 4D online\nreconstruction model CUT3R, and uses parameter-efficient visual prompt tuning,\nto strive to preserve CUT3R's rich spatiotemporal priors, while enabling direct\nreadout of multiple SMPL-X bodies. Human3R is a unified model that eliminates\nheavy dependencies and iterative refinement. After being trained on the\nrelatively small-scale synthetic dataset BEDLAM for just one day on one GPU, it\nachieves superior performance with remarkable efficiency: it reconstructs\nmultiple humans in a one-shot manner, along with 3D scenes, in one stage, at\nreal-time speed (15 FPS) with a low memory footprint (8 GB). Extensive\nexperiments demonstrate that Human3R delivers state-of-the-art or competitive\nperformance across tasks, including global human motion estimation, local human\nmesh recovery, video depth estimation, and camera pose estimation, with a\nsingle unified model. We hope that Human3R will serve as a simple yet strong\nbaseline, be easily extended for downstream applications.Code available in\nhttps://fanegg.github.io/Human3R",
+    "published": "2025-10-07T17:59:52Z",
+    "updated": "2025-10-07T17:59:52Z",
+    "id": "http://arxiv.org/abs/2510.06219v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06219v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "EgoNight: Towards Egocentric Vision Understanding at Night with a\n  Challenging Benchmark",
+    "authors": [
+      "Deheng Zhang",
+      "Yuqian Fu",
+      "Runyi Yang",
+      "Yang Miao",
+      "Tianwen Qian",
+      "Xu Zheng",
+      "Guolei Sun",
+      "Ajad Chhatkuli",
+      "Xuanjing Huang",
+      "Yu-Gang Jiang",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "summary": "Most existing benchmarks for egocentric vision understanding focus primarily\non daytime scenarios, overlooking the low-light conditions that are inevitable\nin real-world applications. To investigate this gap, we present EgoNight, the\nfirst comprehensive benchmark for nighttime egocentric vision, with visual\nquestion answering (VQA) as the core task. A key feature of EgoNight is the\nintroduction of day-night aligned videos, which enhance night annotation\nquality using the daytime data and reveal clear performance gaps between\nlighting conditions. To achieve this, we collect both synthetic videos rendered\nby Blender and real-world recordings, ensuring that scenes and actions are\nvisually and temporally aligned. Leveraging these paired videos, we construct\nEgoNight-VQA, supported by a novel day-augmented night auto-labeling engine and\nrefinement through extensive human verification. Each QA pair is double-checked\nby annotators for reliability. In total, EgoNight-VQA contains 3658 QA pairs\nacross 90 videos, spanning 12 diverse QA types, with more than 300 hours of\nhuman work. Evaluations of state-of-the-art multimodal large language models\n(MLLMs) reveal substantial performance drops when transferring from day to\nnight, underscoring the challenges of reasoning under low-light conditions.\nBeyond VQA, EgoNight also introduces two auxiliary tasks, day-night\ncorrespondence retrieval and egocentric depth estimation at night, that further\nexplore the boundaries of existing models. We believe EgoNight-VQA provides a\nstrong foundation for advancing application-driven egocentric vision research\nand for developing models that generalize across illumination domains. All the\ndata and code will be made available upon acceptance.",
+    "published": "2025-10-07T17:59:47Z",
+    "updated": "2025-10-07T17:59:47Z",
+    "id": "http://arxiv.org/abs/2510.06218v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06218v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular\n  Reasoning",
+    "authors": [
+      "Jiaru Zou",
+      "Soumya Roy",
+      "Vinay Kumar Verma",
+      "Ziyi Wang",
+      "David Wipf",
+      "Pan Lu",
+      "Sumit Negi",
+      "James Zou",
+      "Jingrui He"
+    ],
+    "summary": "Process Reward Models (PRMs) have recently emerged as a powerful framework\nfor enhancing the reasoning capabilities of large reasoning models (LRMs),\nparticularly in the context of test-time scaling (TTS). However, their\npotential for supervising LRMs on tabular reasoning domains remains\nunderexplored. Through detailed empirical analyses, we identify that existing\nPRMs, though widely adopted for supervising text-only reasoning steps, struggle\nwith table-specific operations such as sub-table retrieval and schema\ninteraction, leading to critical performance bottlenecks. To address this\nlimitation, we propose TaTToo, a novel table-grounded PRM framework that (i)\nreasons explicitly over tabular reasoning steps and (ii) integrates tool-based\nverification to provide precise reward supervision. Concretely, we first design\na scalable data curation pipeline that constructs over 60k high-quality\nstep-level annotations by integrating table verification rationales with\ntool-based executions. Building on the collected data, we train TaTToo with a\ndual-stage paradigm: cold-start supervised fine-tuning to capture tool-use\nreasoning patterns, followed by reinforcement learning with tool-grounded\nreward shaping to align our model with table-based verification. We provide a\ncomprehensive evaluation of the policy improvement induced by our newly\ndesigned PRM. Across 5 challenging tabular reasoning benchmarks covering\nnumerical reasoning, fact-checking, and data analysis, TaTToo improves\ndownstream policy LRMs by 30.9% at inference, surpasses strong PRM baselines\nsuch as Qwen-2.5-Math-PRM-72B with only 8B parameters, and demonstrates strong\ngeneralizability across diverse TTS strategies.",
+    "published": "2025-10-07T17:59:41Z",
+    "updated": "2025-10-07T17:59:41Z",
+    "id": "http://arxiv.org/abs/2510.06217v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06217v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "title": "Dropping the D: RGB-D SLAM Without the Depth Sensor",
+    "authors": [
+      "Mert Kiray",
+      "Alican Karaomer",
+      "Benjamin Busam"
+    ],
+    "summary": "We present DropD-SLAM, a real-time monocular SLAM system that achieves\nRGB-D-level accuracy without relying on depth sensors. The system replaces\nactive depth input with three pretrained vision modules: a monocular metric\ndepth estimator, a learned keypoint detector, and an instance segmentation\nnetwork. Dynamic objects are suppressed using dilated instance masks, while\nstatic keypoints are assigned predicted depth values and backprojected into 3D\nto form metrically scaled features. These are processed by an unmodified RGB-D\nSLAM back end for tracking and mapping. On the TUM RGB-D benchmark, DropD-SLAM\nattains 7.4 cm mean ATE on static sequences and 1.8 cm on dynamic sequences,\nmatching or surpassing state-of-the-art RGB-D methods while operating at 22 FPS\non a single GPU. These results suggest that modern pretrained vision models can\nreplace active depth sensors as reliable, real-time sources of metric scale,\nmarking a step toward simpler and more cost-effective SLAM systems.",
+    "published": "2025-10-07T17:59:30Z",
+    "updated": "2025-10-07T17:59:30Z",
+    "id": "http://arxiv.org/abs/2510.06216v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06216v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "Fine-grained Defocus Blur Control for Generative Image Models",
+    "authors": [
+      "Ayush Shrivastava",
+      "Connelly Barnes",
+      "Xuaner Zhang",
+      "Lingzhi Zhang",
+      "Andrew Owens",
+      "Sohrab Amirghodsi",
+      "Eli Shechtman"
+    ],
+    "summary": "Current text-to-image diffusion models excel at generating diverse,\nhigh-quality images, yet they struggle to incorporate fine-grained camera\nmetadata such as precise aperture settings. In this work, we introduce a novel\ntext-to-image diffusion framework that leverages camera metadata, or EXIF data,\nwhich is often embedded in image files, with an emphasis on generating\ncontrollable lens blur. Our method mimics the physical image formation process\nby first generating an all-in-focus image, estimating its monocular depth,\npredicting a plausible focus distance with a novel focus distance transformer,\nand then forming a defocused image with an existing differentiable lens blur\nmodel. Gradients flow backwards through this whole process, allowing us to\nlearn without explicit supervision to generate defocus effects based on content\nelements and the provided EXIF data. At inference time, this enables precise\ninteractive user control over defocus effects while preserving scene contents,\nwhich is not achievable with existing diffusion models. Experimental results\ndemonstrate that our model enables superior fine-grained control without\naltering the depicted scene.",
+    "published": "2025-10-07T17:59:15Z",
+    "updated": "2025-10-07T17:59:15Z",
+    "id": "http://arxiv.org/abs/2510.06215v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06215v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "Stratified GRPO: Handling Structural Heterogeneity in Reinforcement\n  Learning of LLM Search Agents",
+    "authors": [
+      "Mingkang Zhu",
+      "Xi Chen",
+      "Bei Yu",
+      "Hengshuang Zhao",
+      "Jiaya Jia"
+    ],
+    "summary": "Large language model (LLM) agents increasingly rely on external tools such as\nsearch engines to solve complex, multi-step problems, and reinforcement\nlearning (RL) has become a key paradigm for training them. However, the\ntrajectories of search agents are structurally heterogeneous, where variations\nin the number, placement, and outcomes of search calls lead to fundamentally\ndifferent answer directions and reward distributions. Standard policy gradient\nmethods, which use a single global baseline, suffer from what we identify and\nformalize as cross-stratum bias-an \"apples-to-oranges\" comparison of\nheterogeneous trajectories. This cross-stratum bias distorts credit assignment\nand hinders exploration of complex, multi-step search strategies. To address\nthis, we propose Stratified GRPO, whose central component, Stratified Advantage\nNormalization (SAN), partitions trajectories into homogeneous strata based on\ntheir structural properties and computes advantages locally within each\nstratum. This ensures that trajectories are evaluated only against their true\npeers. Our analysis proves that SAN eliminates cross-stratum bias, yields\nconditionally unbiased unit-variance estimates inside each stratum, and retains\nthe global unbiasedness and unit-variance properties enjoyed by standard\nnormalization, resulting in a more pure and scale-stable learning signal. To\nimprove practical stability under finite-sample regimes, we further linearly\nblend SAN with the global estimator. Extensive experiments on diverse\nsingle-hop and multi-hop question-answering benchmarks demonstrate that\nStratified GRPO consistently and substantially outperforms GRPO by up to 11.3\npoints, achieving higher training rewards, greater training stability, and more\neffective search policies. These results establish stratification as a\nprincipled remedy for structural heterogeneity in RL for LLM search agents.",
+    "published": "2025-10-07T17:59:13Z",
+    "updated": "2025-10-07T17:59:13Z",
+    "id": "http://arxiv.org/abs/2510.06214v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06214v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Training Dynamics Impact Post-Training Quantization Robustness",
+    "authors": [
+      "Albert Catalan-Tatjer",
+      "Niccol\u00f2 Ajroldi",
+      "Jonas Geiping"
+    ],
+    "summary": "While post-training quantization is widely adopted for efficient deployment\nof large language models, the mechanisms underlying quantization robustness\nremain unclear. We conduct a comprehensive analysis of quantization degradation\nacross open-source language model training trajectories up to 32B parameters\nand 15T training tokens to accurately assess the relationship between training\ndynamics and quantization performance. Our key finding is that quantization\nerrors in large-scale training runs are driven by a complex interplay between\nlearning rate and other training hyperparameters. Specifically, once learning\nrates decay, validation loss and quantization error diverge, largely\nindependent of training data scale. To investigate interventions on the\ntraining dynamics and identify specific configurations that can modulate\nquantization robustness favorably, we train our own models in controlled\nexperiments up to 100B tokens. Our results challenge the assumption that\nincreasing dataset scale inherently compromises quantization effectiveness,\ndemonstrating instead that strategic training hyperparameter interventions can\nimprove quantization quality at scale.",
+    "published": "2025-10-07T17:59:07Z",
+    "updated": "2025-10-07T17:59:07Z",
+    "id": "http://arxiv.org/abs/2510.06213v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06213v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "title": "Geographical inequalities in mortality by age and gender in Italy,\n  2002-2019: insights from a spatial extension of the Lee-Carter model",
+    "authors": [
+      "Francesca Fiori",
+      "Andrea Riebler",
+      "Sara Martino"
+    ],
+    "summary": "Italy reports some of the lowest levels of mortality in the developed world.\nRecent evidence, however, suggests that even in low mortality countries\nimprovements may be slowing and regional inequalities widening. This study\ncontributes new empirical evidence to the debate by analysing mortality data by\nsingle year of age for males and females across 107 provinces in Italy from\n2002 to 2019. We extend the widely used Lee Carter model to include spatially\nvarying age specific effects, and further specify it to capture space age time\ninteractions. The model is estimated in a Bayesian framework using the inlabru\npackage, which builds on INLA (Integrated Nested Laplace Approximation) for non\nlinear models and facilitates the use of smoothing priors. This approach\nborrows strength across provinces and years, mitigating random fluctuations in\nsmall area death counts. Results demonstrate the value of such a granular\napproach, highlighting the existence of an uneven geography of mortality\ndespite overall national improvements. Mortality disadvantage is concentrated\nin parts of the Centre South and North West, while the Centre North and North\nEast fare relatively better. These geographical differences have widened since\n2010, with clear age and gender specific patterns, being more pronounced at\nyounger adult ages for men and at older adult ages for women. Future work may\ninvolve refining the analysis to mortality by cause of death or socioeconomic\nstatus, informing more targeted public health policies to address mortality\ndisparities across Italy's provinces.",
+    "published": "2025-10-07T17:58:36Z",
+    "updated": "2025-10-07T17:58:36Z",
+    "id": "http://arxiv.org/abs/2510.06210v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06210v1",
+    "categories": [
+      "stat.AP"
+    ],
+    "primary_category": "stat.AP"
+  },
+  {
+    "title": "Drive&Gen: Co-Evaluating End-to-End Driving and Video Generation Models",
+    "authors": [
+      "Jiahao Wang",
+      "Zhenpei Yang",
+      "Yijing Bai",
+      "Yingwei Li",
+      "Yuliang Zou",
+      "Bo Sun",
+      "Abhijit Kundu",
+      "Jose Lezama",
+      "Luna Yue Huang",
+      "Zehao Zhu",
+      "Jyh-Jing Hwang",
+      "Dragomir Anguelov",
+      "Mingxing Tan",
+      "Chiyu Max Jiang"
+    ],
+    "summary": "Recent advances in generative models have sparked exciting new possibilities\nin the field of autonomous vehicles. Specifically, video generation models are\nnow being explored as controllable virtual testing environments.\nSimultaneously, end-to-end (E2E) driving models have emerged as a streamlined\nalternative to conventional modular autonomous driving systems, gaining\npopularity for their simplicity and scalability. However, the application of\nthese techniques to simulation and planning raises important questions. First,\nwhile video generation models can generate increasingly realistic videos, can\nthese videos faithfully adhere to the specified conditions and be realistic\nenough for E2E autonomous planner evaluation? Second, given that data is\ncrucial for understanding and controlling E2E planners, how can we gain deeper\ninsights into their biases and improve their ability to generalize to\nout-of-distribution scenarios? In this work, we bridge the gap between the\ndriving models and generative world models (Drive&Gen) to address these\nquestions. We propose novel statistical measures leveraging E2E drivers to\nevaluate the realism of generated videos. By exploiting the controllability of\nthe video generation model, we conduct targeted experiments to investigate\ndistribution gaps affecting E2E planner performance. Finally, we show that\nsynthetic data produced by the video generation model offers a cost-effective\nalternative to real-world data collection. This synthetic data effectively\nimproves E2E model generalization beyond existing Operational Design Domains,\nfacilitating the expansion of autonomous vehicle services into new operational\ncontexts.",
+    "published": "2025-10-07T17:58:32Z",
+    "updated": "2025-10-07T17:58:32Z",
+    "id": "http://arxiv.org/abs/2510.06209v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06209v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "ShapeGen4D: Towards High Quality 4D Shape Generation from Videos",
+    "authors": [
+      "Jiraphon Yenphraphai",
+      "Ashkan Mirzaei",
+      "Jianqi Chen",
+      "Jiaxu Zou",
+      "Sergey Tulyakov",
+      "Raymond A. Yeh",
+      "Peter Wonka",
+      "Chaoyang Wang"
+    ],
+    "summary": "Video-conditioned 4D shape generation aims to recover time-varying 3D\ngeometry and view-consistent appearance directly from an input video. In this\nwork, we introduce a native video-to-4D shape generation framework that\nsynthesizes a single dynamic 3D representation end-to-end from the video. Our\nframework introduces three key components based on large-scale pre-trained 3D\nmodels: (i) a temporal attention that conditions generation on all frames while\nproducing a time-indexed dynamic representation; (ii) a time-aware point\nsampling and 4D latent anchoring that promote temporally consistent geometry\nand texture; and (iii) noise sharing across frames to enhance temporal\nstability. Our method accurately captures non-rigid motion, volume changes, and\neven topological transitions without per-frame optimization. Across diverse\nin-the-wild videos, our method improves robustness and perceptual fidelity and\nreduces failure modes compared with the baselines.",
+    "published": "2025-10-07T17:58:11Z",
+    "updated": "2025-10-07T17:58:11Z",
+    "id": "http://arxiv.org/abs/2510.06208v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06208v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "title": "EmbodiedCoder: Parameterized Embodied Mobile Manipulation via Modern\n  Coding Model",
+    "authors": [
+      "Zefu Lin",
+      "Rongxu Cui",
+      "Chen Hanning",
+      "Xiangyu Wang",
+      "Junjia Xu",
+      "Xiaojuan Jin",
+      "Chen Wenbo",
+      "Hui Zhou",
+      "Lue Fan",
+      "Wenling Li",
+      "Zhaoxiang Zhang"
+    ],
+    "summary": "Recent advances in control robot methods, from end-to-end\nvision-language-action frameworks to modular systems with predefined\nprimitives, have advanced robots' ability to follow natural language\ninstructions. Nonetheless, many approaches still struggle to scale to diverse\nenvironments, as they often rely on large annotated datasets and offer limited\ninterpretability.In this work, we introduce EmbodiedCoder, a training-free\nframework for open-world mobile robot manipulation that leverages coding models\nto directly generate executable robot trajectories. By grounding high-level\ninstructions in code, EmbodiedCoder enables flexible object geometry\nparameterization and manipulation trajectory synthesis without additional data\ncollection or fine-tuning.This coding-based paradigm provides a transparent and\ngeneralizable way to connect perception with manipulation. Experiments on real\nmobile robots show that EmbodiedCoder achieves robust performance across\ndiverse long-term tasks and generalizes effectively to novel objects and\nenvironments.Our results demonstrate an interpretable approach for bridging\nhigh-level reasoning and low-level control, moving beyond fixed primitives\ntoward versatile robot intelligence. See the project page at:\nhttps://anonymous.4open.science/w/Embodied-Coder/",
+    "published": "2025-10-07T17:58:02Z",
+    "updated": "2025-10-07T17:58:02Z",
+    "id": "http://arxiv.org/abs/2510.06207v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06207v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "title": "Equivariant Eilenberg-Watts theorems for locally compact quantum groups",
+    "authors": [
+      "Joeri De Ro"
+    ],
+    "summary": "Given two von Neumann algebras $A$ and $B$, the $W^*$-algebraic\nEilenberg-Watts theorem, due to M. Rieffel, asserts that there is a canonical\nequivalence $\\operatorname{Corr}(A,B)\\simeq\n\\operatorname{Fun}(\\operatorname{Rep}(B), \\operatorname{Rep}(A))$ of\ncategories, where $\\operatorname{Corr}(A,B)$ denotes the category of all\n$A$-$B$-correspondences, $\\operatorname{Rep}(A)$ is the category of all unital\nnormal $*$-representations of $A$ on Hilbert spaces and\n$\\operatorname{Fun}(\\operatorname{Rep}(B), \\operatorname{Rep}(A))$ denotes the\ncategory of all normal $*$-functors $\\operatorname{Rep}(B)\\to\n\\operatorname{Rep}(A)$. In this paper, we upgrade the von Neumann algebras $A$\nand $B$ with actions $A\\curvearrowleft \\mathbb{G}$ and $B\\curvearrowleft\n\\mathbb{G}$ of a locally compact quantum group $\\mathbb{G}$, and we provide\nseveral equivariant versions of the $W^*$-algebraic Eilenberg-Watts theorem\nusing the language of module categories. We also prove that for a locally\ncompact quantum group $\\mathbb{G}$ with Drinfeld double $D(\\mathbb{G})$, the\ncategory of unitary $D(\\mathbb{G})$-representations is isomorphic to the\nDrinfeld center of $\\operatorname{Rep}(\\mathbb{G})$, generalizing a result by\nNeshveyev-Yamashita from the compact to the locally compact setting.",
+    "published": "2025-10-07T17:57:14Z",
+    "updated": "2025-10-07T17:57:14Z",
+    "id": "http://arxiv.org/abs/2510.06206v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06206v1",
+    "categories": [
+      "math.OA",
+      "math.CT",
+      "math.QA"
+    ],
+    "primary_category": "math.OA"
+  },
+  {
+    "title": "TokenChain: A Discrete Speech Chain via Semantic Token Modeling",
+    "authors": [
+      "Mingxuan Wang",
+      "Satoshi Nakamura"
+    ],
+    "summary": "Machine Speech Chain, simulating the human perception-production loop, proves\neffective in jointly improving ASR and TTS. We propose TokenChain, a fully\ndiscrete speech chain coupling semantic-token ASR with a two-stage TTS: an\nautoregressive text-to-semantic model co-trained with ASR and a\nmasked-generative semantic-to-acoustic model for synthesis only. End-to-end\nfeedback across the text interface is enabled with straight-through\nargmax/Gumbel-Softmax and balanced with supervised ASR via dynamic weight\naveraging. Ablations examine optimal temperature schedules for in- and\ncross-domain transfer. Evaluation reveals TokenChain surpasses baseline\naccuracy 2-6 epochs earlier and yields 5-13% lower equal-epoch error with\nstable T2S on LibriSpeech, and reduces relative ASR WER by 56% and T2S WER by\n31% on TED-LIUM with minimal forgetting, showing that chain learning remains\neffective with token interfaces and models.",
+    "published": "2025-10-07T17:54:12Z",
+    "updated": "2025-10-07T17:54:12Z",
+    "id": "http://arxiv.org/abs/2510.06201v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06201v1",
+    "categories": [
+      "eess.AS",
+      "cs.AI",
+      "cs.CL",
+      "cs.SD"
+    ],
+    "primary_category": "eess.AS"
+  },
+  {
+    "title": "DYMO-Hair: Generalizable Volumetric Dynamics Modeling for Robot Hair\n  Manipulation",
+    "authors": [
+      "Chengyang Zhao",
+      "Uksang Yoo",
+      "Arkadeep Narayan Chaudhury",
+      "Giljoo Nam",
+      "Jonathan Francis",
+      "Jeffrey Ichnowski",
+      "Jean Oh"
+    ],
+    "summary": "Hair care is an essential daily activity, yet it remains inaccessible to\nindividuals with limited mobility and challenging for autonomous robot systems\ndue to the fine-grained physical structure and complex dynamics of hair. In\nthis work, we present DYMO-Hair, a model-based robot hair care system. We\nintroduce a novel dynamics learning paradigm that is suited for volumetric\nquantities such as hair, relying on an action-conditioned latent state editing\nmechanism, coupled with a compact 3D latent space of diverse hairstyles to\nimprove generalizability. This latent space is pre-trained at scale using a\nnovel hair physics simulator, enabling generalization across previously unseen\nhairstyles. Using the dynamics model with a Model Predictive Path Integral\n(MPPI) planner, DYMO-Hair is able to perform visual goal-conditioned hair\nstyling. Experiments in simulation demonstrate that DYMO-Hair's dynamics model\noutperforms baselines on capturing local deformation for diverse, unseen\nhairstyles. DYMO-Hair further outperforms baselines in closed-loop hair styling\ntasks on unseen hairstyles, with an average of 22% lower final geometric error\nand 42% higher success rate than the state-of-the-art system. Real-world\nexperiments exhibit zero-shot transferability of our system to wigs, achieving\nconsistent success on challenging unseen hairstyles where the state-of-the-art\nsystem fails. Together, these results introduce a foundation for model-based\nrobot hair care, advancing toward more generalizable, flexible, and accessible\nrobot hair styling in unconstrained physical environments. More details are\navailable on our project page: https://chengyzhao.github.io/DYMOHair-web/.",
+    "published": "2025-10-07T17:53:56Z",
+    "updated": "2025-10-07T17:53:56Z",
+    "id": "http://arxiv.org/abs/2510.06199v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06199v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "title": "StarEmbed: Benchmarking Time Series Foundation Models on Astronomical\n  Observations of Variable Stars",
+    "authors": [
+      "Weijian Li",
+      "Hong-Yu Chen",
+      "Qinjie Lin",
+      "Nabeel Rehemtulla",
+      "Ved G. Shah",
+      "Dennis Wu",
+      "Adam A. Miller",
+      "Han Liu"
+    ],
+    "summary": "Time series foundation models (TSFMs) are increasingly being adopted as\nhighly-capable general-purpose time series representation learners. Although\ntheir training corpora are vast, they exclude astronomical time series data.\nObservations of stars produce peta-scale time series with unique challenges\nincluding irregular sampling and heteroskedasticity. We introduce StarEmbed,\nthe first public benchmark for rigorous and standardized evaluation of\nstate-of-the-art TSFMs on stellar time series observations (``light curves'').\nWe benchmark on three scientifically-motivated downstream tasks: unsupervised\nclustering, supervised classification, and out-of-distribution source\ndetection. StarEmbed integrates a catalog of expert-vetted labels with\nmulti-variate light curves from the Zwicky Transient Facility, yielding ~40k\nhand-labeled light curves spread across seven astrophysical classes. We\nevaluate the zero-shot representation capabilities of three TSFMs (MOIRAI,\nChronos, Chronos-Bolt) and a domain-specific transformer (Astromer) against\nhandcrafted feature extraction, the long-standing baseline in the astrophysics\nliterature. Our results demonstrate that these TSFMs, especially the Chronos\nmodels, which are trained on data completely unlike the astronomical\nobservations, can outperform established astrophysics-specific baselines in\nsome tasks and effectively generalize to entirely new data. In particular,\nTSFMs deliver state-of-the-art performance on our out-of-distribution source\ndetection benchmark. With the first benchmark of TSFMs on astronomical time\nseries data, we test the limits of their generalization and motivate a paradigm\nshift in time-domain astronomy from using task-specific, fully supervised\npipelines toward adopting generic foundation model representations for the\nanalysis of peta-scale datasets from forthcoming observatories.",
+    "published": "2025-10-07T17:53:56Z",
+    "updated": "2025-10-07T17:53:56Z",
+    "id": "http://arxiv.org/abs/2510.06200v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06200v1",
+    "categories": [
+      "astro-ph.SR",
+      "astro-ph.IM",
+      "cs.AI"
+    ],
+    "primary_category": "astro-ph.SR"
+  },
+  {
+    "title": "Peeking inside the Black-Box: Reinforcement Learning for Explainable and\n  Accurate Relation Extraction",
+    "authors": [
+      "Xinyu Guo",
+      "Zhengliang Shi",
+      "Minglai Yang",
+      "Mahdi Rahimi",
+      "Mihai Surdeanu"
+    ],
+    "summary": "This paper introduces a framework for relation extraction (RE) that enhances\nboth accuracy and explainability. The framework has two key components: (i) a\nreasoning mechanism that formulates relation extraction as a series of\ntext-processing steps inspired by cognitive science, and (ii) an optimization\nprocess driven by reinforcement learning (RL) with a novel reward function\ndesigned to improve both task accuracy and explanation quality. We call our\napproach CogRE. Our framework addresses the lack of supervision for\nlanguage-based explanations in traditional RE by promoting outputs that include\nimportant relation keywords. These keywords are drawn from a high-quality\ndictionary that is automatically constructed using an LLM. We evaluate our\napproach for the task of one-shot RE using two LLMs and two RE datasets. Our\nexperiments show that CogRE improves explanation quality by addressing two\ncommon failure patterns in one-shot RE: poor attention focus and limited\none-shot learning capability. For example, our cognitive-structured reasoning\nwith Qwen2.5-15B-Instruct on One-shot NYT29 achieves 24.65% F1, surpassing\nprior reasoning-based designs. Optimizing this approach with RL using our\nreward further improves performance by +23.46% (absolute). Finally, human\nevaluation shows that our best model generates relational keywords closely\naligned with gold labels, increasing human explanation quality ratings by 54%\n(relative).",
+    "published": "2025-10-07T17:53:55Z",
+    "updated": "2025-10-07T17:53:55Z",
+    "id": "http://arxiv.org/abs/2510.06198v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06198v1",
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Latent Speech-Text Transformer",
+    "authors": [
+      "Yen-Ju Lu",
+      "Yashesh Gaur",
+      "Wei Zhou",
+      "Benjamin Muller",
+      "Jesus Villalba",
+      "Najim Dehak",
+      "Luke Zettlemoyer",
+      "Gargi Ghosh",
+      "Mike Lewis",
+      "Srinivasan Iyer",
+      "Duc Le"
+    ],
+    "summary": "Auto-regressive speech-text models are typically pre-trained on a large\nnumber of interleaved sequences of text tokens and raw speech encoded as speech\ntokens using vector quantization. These models have demonstrated\nstate-of-the-art performance in speech-to-speech understanding and generation\nbenchmarks, together with promising scaling laws, primarily enabled by the\nrepresentational alignment between text and speech. Nevertheless, they suffer\nfrom shortcomings, partly owing to the disproportionately longer sequences of\nspeech tokens in contrast to textual tokens. This results in a large compute\nimbalance between modalities during pre-training as well as during inference,\nand a potential hindrance to effectively aligning speech and text, ultimately\ntranslating to several orders of magnitude slower scaling laws. We introduce\nthe Latent Speech-Text Transformer (LST), which makes pre-training speech-text\nmodels more data-efficient by dynamically and inexpensively aggregating speech\ntokens into latent speech patches. These patches serve as higher-level units\nthat can either align with corresponding textual units to aid capability\ntransfer or even encapsulate common speech sequences like silences to be more\ncompute-efficient. We show that LST outperforms vanilla approaches on\nspeech-to-speech as well as text-to-text benchmarks in both data- and\ncompute-controlled settings, the former indicating more effective\nrepresentational alignment and the latter indicating steeper scaling laws for\nspeech-text models. On HellaSwag story completion, LST achieves 6.5% absolute\ngain in speech accuracy under compute-controlled training and 5.3% under\ndata-controlled training, while also improving text performance. We will\nrelease our models, code, and the evaluation data to facilitate further\nresearch.",
+    "published": "2025-10-07T17:52:08Z",
+    "updated": "2025-10-07T17:52:08Z",
+    "id": "http://arxiv.org/abs/2510.06195v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06195v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "eess.AS"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "title": "Rare Transients in Nearby Galaxies Explain Ultra-high-energy Cosmic Rays",
+    "authors": [
+      "Imre Bartos",
+      "Marek Kowalski"
+    ],
+    "summary": "The origin of ultra-high-energy cosmic rays remains one of the central open\nquestions in astroparticle physics. Recent measurements reveal anisotropies in\narrival directions, a rigidity-dependent composition dominated by\nintermediate-mass nuclei, and striking hemispheric differences in the energy\nspectra. Here we show that rare transients in nearby galaxies can naturally\naccount for these features. In our fiducial neutron-star merger model, the\ncosmic ray flux above $25$ EeV is dominated by ten nearby galaxies within\n$8\\,$Mpc. This accounts for the observed hotspots: seven of the ten brightest\ngalaxies coincide with reported excess regions, a chance probability of\n$p\\simeq0.003$. Nearby transients also explain the spectral excess of TA over\nAuger; link their angular sizes to extragalactic magnetic fields at $\\sim$1 nG;\nexplain the dominance of individual species over narrow energy ranges; and the\nrigidity-aligned succession of isotopes.",
+    "published": "2025-10-07T17:51:47Z",
+    "updated": "2025-10-07T17:51:47Z",
+    "id": "http://arxiv.org/abs/2510.06193v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06193v1",
+    "categories": [
+      "astro-ph.HE"
+    ],
+    "primary_category": "astro-ph.HE"
+  },
+  {
+    "title": "Rapid calibration of atrial electrophysiology models using Gaussian\n  process emulators in the ensemble Kalman filter",
+    "authors": [
+      "Mariya Mamajiwala",
+      "Cesare Corrado",
+      "Chris Lanyon",
+      "Steven A. Niederer",
+      "Richard D. Wilkinson",
+      "Richard H. Clayton"
+    ],
+    "summary": "Atrial fibrillation (AF) is a common cardiac arrhythmia characterised by\ndisordered electrical activity in the atria. The standard treatment is catheter\nablation, which is invasive and irreversible. Recent advances in computational\nelectrophysiology offer the potential for patient-specific models, often\nreferred to as digital twins, that can be used to guide clinical decisions. To\nbe of practical value, we must be able to rapidly calibrate physics-based\nmodels using routine clinical measurements. We pose this calibration task as a\nstatic inverse problem, where the goal is to infer tissue-level\nelectrophysiological parameters from the available observations. To make this\ntractable, we replace the expensive forward model with Gaussian process\nemulators (GPEs), and propose a novel adaptation of the ensemble Kalman filter\n(EnKF) for static non-linear inverse problems. The approach yields parameter\nsamples that can be interpreted as coming from the best Gaussian approximation\nof the posterior distribution. We compare our results with those obtained using\nMarkov chain Monte Carlo (MCMC) sampling and demonstrate the potential of the\napproach to enable near-real-time patient-specific calibration, a key step\ntowards predicting outcomes of AF treatment within clinical timescales. The\napproach is readily applicable to a wide range of static inverse problems in\nscience and engineering.",
+    "published": "2025-10-07T17:50:21Z",
+    "updated": "2025-10-07T17:50:21Z",
+    "id": "http://arxiv.org/abs/2510.06191v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06191v1",
+    "categories": [
+      "stat.AP"
+    ],
+    "primary_category": "stat.AP"
+  },
+  {
+    "title": "On Powerful Ways to Generate: Autoregression, Diffusion, and Beyond",
+    "authors": [
+      "Chenxiao Yang",
+      "Cai Zhou",
+      "David Wipf",
+      "Zhiyuan Li"
+    ],
+    "summary": "This paper formally studies generation processes, including auto-regressive\nnext-token prediction and masked diffusion, that abstract beyond architectural\nspecifics. At this level of abstraction, we quantify their benefits and\nlimitations through measurable criteria such as computational hardness and\nlearnability. In particular, we demonstrate that allowing generation to proceed\nbeyond autoregression and current masked diffusion, with capabilities to\nrewrite and length-variable edit, can bring significant theoretical and\nempirical advantages, with important implications for frontier LLMs that aspire\nto tackle increasingly hard problems and work universally across domains beyond\nnatural language, such as coding and science.",
+    "published": "2025-10-07T17:49:30Z",
+    "updated": "2025-10-07T17:49:30Z",
+    "id": "http://arxiv.org/abs/2510.06190v1",
+    "pdf_url": "http://arxiv.org/pdf/2510.06190v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  }
+]

@@ -6,4 +6,5 @@ fastapi
 uvicorn
 streamlit
 pylang
+future
 langchain
