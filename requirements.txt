@@ -1,0 +1,9 @@
+torch
+transformers
+sentence-transformers
+chromadb
+fastapi
+uvicorn
+streamlit
+pylang
+langchain
