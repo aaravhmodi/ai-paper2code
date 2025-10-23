@@ -21,7 +21,7 @@ feedparser
 # Utilities
 tqdm
 python-dotenv
-
+hf_xet
 # Optional: For fine-tuning later (Phase 2)
 # peft
 # accelerate

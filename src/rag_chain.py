@@ -39,11 +39,18 @@ def _get_model_and_tokenizer():
     global _tokenizer, _model
     if _tokenizer is None or _model is None:
         import os
-        from transformers import AutoTokenizer, AutoModelForCausalLM
         from dotenv import load_dotenv
         
         # Load environment variables from .env file
         load_dotenv()
+        
+        # Import accelerate BEFORE importing transformers model classes
+        try:
+            import accelerate
+        except ImportError:
+            raise ImportError("accelerate is required. Install it with: pip install accelerate")
+        
+        from transformers import AutoTokenizer, AutoModelForCausalLM
 
         model_id = "mistralai/Mistral-7B-v0.1"
         # Read HF token from .env file or environment variable
