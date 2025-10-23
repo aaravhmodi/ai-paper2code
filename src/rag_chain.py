@@ -39,15 +39,26 @@ def _get_model_and_tokenizer():
     global _tokenizer, _model
     if _tokenizer is None or _model is None:
         import os
+        from dotenv import load_dotenv
+        
+        # Load environment variables from .env file
+        load_dotenv()
+        
+        # Import accelerate BEFORE importing transformers model classes
+        try:
+            import accelerate
+        except ImportError:
+            raise ImportError("accelerate is required. Install it with: pip install accelerate")
+        
         from transformers import AutoTokenizer, AutoModelForCausalLM
 
         model_id = "mistralai/Mistral-7B-v0.1"
-        # Read HF token from env var (set this in your shell or via huggingface-cli login)
-        hf_token = os.environ.get("HUGGINGFACE_HUB_TOKEN")
+        # Read HF token from .env file or environment variable
+        hf_token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN")
 
-        # Pass token to from_pretrained so gated models can be downloaded when authenticated
-        _tokenizer = AutoTokenizer.from_pretrained(model_id, use_auth_token=hf_token)
-        _model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto", use_auth_token=hf_token)
+        # Pass token to from_pretrained (modern API uses 'token' parameter)
+        _tokenizer = AutoTokenizer.from_pretrained(model_id, token=hf_token)
+        _model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto", token=hf_token)
     return _tokenizer, _model
 
 
