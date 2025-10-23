@@ -1,0 +1,104 @@
+# ===== CRITICAL: Security Files =====
+# Never commit these - they contain secrets!
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ===== Virtual Environments =====
+venv/
+ENV/
+env/
+.venv
+
+# ===== Jupyter Notebook =====
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# ===== IDEs and Editors =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Testing =====
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ===== Model Downloads & Cache =====
+# Hugging Face cache (models can be large!)
+.cache/
+models/
+*.bin
+*.safetensors
+# Keep the folder structure but ignore large model files
+!models/.gitkeep
+
+# ===== Database Files =====
+# ChromaDB can regenerate from source
+# Uncomment if you want to track the DB:
+# db/chroma_db/
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Temporary Files =====
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ===== OS Files =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# ===== Project Specific =====
+# Temporary test scripts
+test_live_query.py
+check_server.py
+
+# Large PDF downloads (optional - comment out if you want to track PDFs)
+# data/papers/*.pdf
+
+# ===== Documentation (optional) =====
+# Uncomment if you don't want to track these guide files:
+# START_SERVERS.txt
+# VISUAL_SETUP_GUIDE.txt
+

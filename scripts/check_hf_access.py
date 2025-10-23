@@ -4,9 +4,10 @@ import requests
 model_url = 'https://huggingface.co/mistralai/Mistral-7B-v0.1'
 api_url = model_url + '/raw/main/config.json'
 
-token = os.environ.get('HUGGINGFACE_HUB_TOKEN')
+token = os.environ.get('HUGGINGFACE_HUB_TOKEN') or os.environ.get('HF_TOKEN')
 if not token:
-    print('HUGGINGFACE_HUB_TOKEN not set in environment')
+    print('Neither HUGGINGFACE_HUB_TOKEN nor HF_TOKEN set in environment')
+    print('Please set one of these environment variables or run: huggingface-cli login')
     raise SystemExit(1)
 
 headers = {'Authorization': f'Bearer {token}'}

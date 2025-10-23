@@ -1,6 +1,5 @@
 import json
 import chromadb
-from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
 import os
 
@@ -15,8 +14,8 @@ def main():
     print(f"📄 Loaded {len(papers)} papers")
 
     model = SentenceTransformer("all-MiniLM-L6-v2")
-    # Enable persistence so the DB is written to disk and can be re-opened later
-    client = chromadb.Client(Settings(persist_directory=DB_DIR, is_persistent=True))
+    # Use modern ChromaDB PersistentClient API
+    client = chromadb.PersistentClient(path=DB_DIR)
     collection = client.get_or_create_collection("ai_papers")
 
     texts, metadatas, ids = [], [], []

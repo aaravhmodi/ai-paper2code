@@ -1,0 +1,139 @@
+═══════════════════════════════════════════════════════════════════════════
+  VISUAL GUIDE: How to Start Your System
+═══════════════════════════════════════════════════════════════════════════
+
+
+CURRENT SITUATION (Why you're getting errors):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    Browser (Streamlit UI)
+         |
+         | Trying to connect...
+         ↓
+    ❌ Port 8000 - NOTHING LISTENING!
+         ↓
+    [Connection Refused Error]
+
+
+WHAT YOU NEED (The correct setup):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ Terminal 1: API Server                                              │
+│ ─────────────────────────────────────────────────────────────────── │
+│ $ uvicorn src.server:app --reload                                   │
+│                                                                       │
+│ INFO: Uvicorn running on http://127.0.0.1:8000                      │
+│ INFO: Application startup complete.                                 │
+│ [Running... DO NOT CLOSE]                                           │
+└─────────────────────────────────────────────────────────────────────┘
+                              ↓
+                    ✓ Port 8000 is ACTIVE
+                              ↓
+┌─────────────────────────────────────────────────────────────────────┐
+│ Terminal 2: Streamlit                                               │
+│ ─────────────────────────────────────────────────────────────────── │
+│ $ streamlit run src/frontend.py                                     │
+│                                                                       │
+│ Local URL: http://localhost:8501                                    │
+│ [Running... DO NOT CLOSE]                                           │
+└─────────────────────────────────────────────────────────────────────┘
+                              ↓
+                    ✓ Port 8501 is ACTIVE
+                              ↓
+┌─────────────────────────────────────────────────────────────────────┐
+│ Browser: http://localhost:8501                                      │
+│ ─────────────────────────────────────────────────────────────────── │
+│                                                                       │
+│  🧬 AI Paper-to-Code Generator                                      │
+│                                                                       │
+│  Ask about a model: [________________________]                      │
+│                                                                       │
+│  [ Generate Code ]                                                   │
+│                                                                       │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+HOW DATA FLOWS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. User types query in Browser (port 8501)
+                    ↓
+  2. Streamlit sends to API Server (port 8000)
+                    ↓
+  3. API Server runs RAG chain:
+     - Retrieves papers from ChromaDB
+     - Sends to Mistral-7B for code generation
+                    ↓
+  4. Generated code returns to Streamlit
+                    ↓
+  5. Browser displays PyTorch code
+
+
+STEP-BY-STEP ACTION PLAN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ ] STEP 1: Open a terminal
+    
+    In VS Code: Terminal → New Terminal
+    In Windows: Right-click folder → Open in Terminal
+
+[ ] STEP 2: Run this command:
+    
+    uvicorn src.server:app --reload
+    
+    ⏳ Wait for: "Application startup complete"
+    ⚠️  KEEP THIS TERMINAL OPEN!
+
+[ ] STEP 3: Open ANOTHER terminal (keep first one running!)
+    
+    In VS Code: Click the + button in terminal panel
+    In Windows: Open another PowerShell window
+
+[ ] STEP 4: In the NEW terminal, run:
+    
+    streamlit run src/frontend.py
+    
+    ✓ Browser opens automatically
+    ⚠️  KEEP THIS TERMINAL OPEN TOO!
+
+[ ] STEP 5: In browser, try a query:
+    
+    Example: "implement transformer attention mechanism"
+    Click "Generate Code"
+    Wait 30-60 seconds
+
+
+COMMON MISTAKES TO AVOID:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ Only starting Streamlit (Terminal 2) but not API server (Terminal 1)
+   → You get connection errors!
+
+❌ Closing Terminal 1 after starting it
+   → API server stops, connection breaks
+
+❌ Running both commands in the SAME terminal
+   → Second command never runs because first one blocks
+
+❌ Forgetting to wait for "Application startup complete"
+   → Server isn't ready yet, requests fail
+
+
+WHAT SUCCESS LOOKS LIKE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Terminal 1: Shows "Application startup complete" - STAYS OPEN
+Terminal 2: Shows "Local URL: http://localhost:8501" - STAYS OPEN
+Browser:    Shows AI Paper-to-Code interface - WORKS!
+
+
+NEED MORE HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Check these files:
+  - START_SERVERS.txt (detailed instructions)
+  - README.md (full documentation)
+
+═══════════════════════════════════════════════════════════════════════════
+
