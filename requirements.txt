@@ -1,29 +1,10 @@
-# Core ML/AI Libraries
 torch
 transformers
 sentence-transformers
-accelerate
-
-# Vector Database
-chromadb>=0.4.0
-
-# API & Web Framework
+chromadb
 fastapi
-uvicorn[standard]
+uvicorn
 streamlit
-requests
-
-# Document Processing
+pylang
+future
 langchain
-pypdf
-feedparser
-
-# Utilities
-tqdm
-python-dotenv
-hf_xet
-# Optional: For fine-tuning later (Phase 2)
-# peft
-# accelerate
-# bitsandbytes
-# datasets

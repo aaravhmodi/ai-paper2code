@@ -1,12 +1,13 @@
 # src/retriever.py
 from sentence_transformers import SentenceTransformer
 import chromadb
+from chromadb.config import Settings
 
 # --- Load the same model used for embeddings ---
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 # --- Connect to your existing persistent ChromaDB ---
-client = chromadb.PersistentClient(path="db/chroma_db")
+client = chromadb.Client(Settings(persist_directory="db/chroma_db", is_persistent=True))
 collection = client.get_or_create_collection("ai_papers")
 
 # --- Function to query documents ---
